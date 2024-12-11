@@ -1,0 +1,21 @@
+Colin Chambachan - a non-exhaustive insight
+
+Experience:
+Data + AI @ RBC
+Full Stack @ Workland
+Full Stack @ McMaster Satellite 
+Frontend @ Workland
+
+Skills:
+Langs - Python, Java, SQL, Javascript + others
+Tech - Spark, Pandas, Express, React, Scikit + others
+Tools - AWS, MySQL, Tableau, Firebase + others
+
+Projects:
+PortfolioPulse - AWS -> Daily investment insights
+AutoMate - GenAI -> End-to-End Chrome Workflows 
+
+Socials:
+colinchambachan.me
+linkedin.com/in/colinchambachan
+github.com/colinchambachan
