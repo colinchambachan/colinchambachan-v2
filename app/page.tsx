@@ -163,7 +163,9 @@ export default function Home() {
           {/* <p className="py-4">Press ESC key or click outside to close</p> */}
           <div className="bg-gray-100 p-4 mt-3 rounded-md">
             <div className="mb-3 flex justify-between">
-              <strong>Colin Chambachan</strong>
+              <div className="text-lg">
+                <strong>Colin Chambachan</strong>
+              </div>
               <div
                 // TODO: add save to clipboard logic
                 onClick={() => {

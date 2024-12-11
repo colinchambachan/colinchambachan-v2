@@ -1,6 +1,4 @@
 "use client";
-import Image from "next/image";
-import hero from "/public/hero.jpg";
 
 export default function About() {
   return (
