@@ -28,12 +28,12 @@ export default function Home() {
       content += "\n";
     });
 
-    // Copy the formatted content to clipboard
+    // copy the formatted content to clipboard
     navigator.clipboard
       .writeText(content)
       .then(() => {
         setQuickCopied(true);
-        setTimeout(() => setQuickCopied(false), 2000); // Reset after 2 seconds
+        setTimeout(() => setQuickCopied(false), 2000);
       })
       .catch((error) => {
         console.error("Failed to copy text:", error);
@@ -41,7 +41,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    // Fetch the text file
+    // fetch the text file
     const fetchTextFile = async () => {
       try {
         const response = await fetch("/data/quick.txt");
@@ -77,8 +77,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex-col justify-items-center content-between">
-      <div className="hero mt-[-5rem] mb-[-5rem] md:mb-0 md:mt-[-10rem] min-h-screen">
+    <div className="flex-col justify-items-center content-between ">
+      <div className="hero my-[-5rem] md:mt-[-10rem] justify-self-center self-center min-h-screen">
         {/* <div className="hero h-96"> */}
         <div className="flex justify-center text-center xl:justify-normal md:text-left">
           <Image
@@ -87,7 +87,7 @@ export default function Home() {
             alt="hi"
             priority={true}
           />
-          <div className="mt-auto mb-auto">
+          <div className="mt-auto mb-auto" data-aos="fade-up">
             <h1 className="text-5xl font-bold">Hi, I'm Colin</h1>
             <h2 className="py-2 text-gray-500">
               <em>Currently: Data + AI @ RBC</em>
@@ -167,7 +167,6 @@ export default function Home() {
                 <strong>Colin Chambachan</strong>
               </div>
               <div
-                // TODO: add save to clipboard logic
                 onClick={() => {
                   handleClipboardCopy();
                   setQuickCopied(true);
