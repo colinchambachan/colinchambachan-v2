@@ -4,6 +4,7 @@ import "./globals.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Navbar from "./_components/navbar";
 import Footer from "./_components/footer";
+import { AOSInit } from "./_components/aos";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,6 +29,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="cmyk">
+      <head>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
+      </head>
+      <AOSInit />
       <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         className="font-Domine antialiased min-h-screen flex flex-col "
