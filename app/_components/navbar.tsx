@@ -10,18 +10,18 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="flex font-semibold justify-between border-black border-1 ">
-        <button className="mx-2 hover:text-primary">
-          <Link href="/about">about</Link>
-        </button>
-        <button className="mx-2 hover:text-primary">
-          <Link href="/experience">experience</Link>
-        </button>
-        <button className="mx-2 hover:text-primary">
-          <Link href="/projects">projects</Link>
-        </button>
-        <button className="mx-2 hover:text-primary">
-          <Link href="/more">more</Link>
-        </button>
+        <Link href="/about">
+          <button className="mx-2 hover:text-primary">about</button>
+        </Link>
+        <Link href="/experience">
+          <button className="mx-2 hover:text-primary">experience</button>
+        </Link>
+        <Link href="/projects">
+          <button className="mx-2 hover:text-primary">projects</button>
+        </Link>
+        <Link href="/more">
+          <button className="mx-2 hover:text-primary">more</button>
+        </Link>
       </div>
     </div>
   );
