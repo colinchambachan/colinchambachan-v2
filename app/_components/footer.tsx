@@ -1,6 +1,3 @@
-import Image from "next/image";
-import logo from "/public/logosCropped.jpg";
-import Link from "next/link";
 export default function Footer() {
   return (
     <div className="w-full p-4 xl:px-64 ">

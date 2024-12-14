@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import hero from "/public/hero.jpg";
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Modal from "./_components/modal";
 
 export default function Home() {

@@ -1,6 +1,5 @@
 "use client";
 
-import Aos from "aos";
 import { useEffect, useState } from "react";
 import { AOSInit } from "../_components/aos";
 

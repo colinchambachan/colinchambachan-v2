@@ -1,6 +1,5 @@
 "use client";
 
-import Aos from "aos";
 import { useEffect, useState } from "react";
 import { AOSInit } from "../_components/aos";
 
@@ -52,14 +51,14 @@ export default function Experience() {
         >
           {/* Repeatable card */}
           {experiences?.map((experience: Experience, index: number) => {
-            const cardDelay = 600 + index * 100;
+            const cardDelay = 600 + index * 500;
             return (
               <div
                 key={experience.org + experience.role}
                 className="card glass h-full w-100 m-2 cursor-pointer hover:text-primary transition ease-in-out duration-1000"
                 data-aos-anchor="#parent"
                 data-aos="fade-left"
-                data-aos-delay={600 + index * 500}
+                data-aos-delay={cardDelay}
               >
                 <a href={experience.link} target="_blank" className="h-full">
                   <div className="card-body h-full">
