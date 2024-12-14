@@ -37,6 +37,7 @@ export default function About() {
                 <a
                   className="text-primary font-bold underline underline-offset-4"
                   href="https://rbcborealis.com/applications/lumina-platform/"
+                  target="_blank"
                 >
                   Lumina Data Platform{" "}
                 </a>
@@ -59,6 +60,7 @@ export default function About() {
               <a
                 href="mailto:colin.chambachan@gmail.com"
                 className="text-primary font-bold underline underline-offset-4"
+                target="_blank"
               >
                 colin.chambachan@gmail.com
               </a>
