@@ -1,0 +1,30 @@
+[
+  {
+    "org": "RBC Borealis",
+    "role": "Software Engineering Intern",
+    "time": "Sep 2024 - Present",
+    "desc": "On Data Engineering side, working on a data pipeline to analyze memory wastage on the cluster. On Gen AI side, working on changes and features to migration service for legacy languages (COBOL, SAS, etc.)",
+    "skills": ["Spark", "Hadoop", "Python", "Langchain", "LangGraph"]
+  },
+  {
+    "org": "Workland",
+    "role": "Full-Stack Developer Intern",
+    "time": "May 2024 - Aug 2024",
+    "desc": "Returned to design and implement new microservice for Candidate Referral Program",
+    "skills": ["React", "PHP", "ERDs", "Angular"]
+  },
+  {
+    "org": "Workland",
+    "role": "Front-end Developer Intern",
+    "time": "May 2023 - Aug 2023",
+    "desc": "Migration from legacy Angular codebase into React",
+    "skills": ["React", "Angular", "Bootstrap"]
+  },
+  {
+    "org": "McMaster Interdisciplinary Satellite Team",
+    "role": "Software Developer",
+    "time": "Sep 2023 - Present",
+    "desc": "Mission Operation & Controls Dashboard - used for satellite communication and job automation",
+    "skills": ["Python", "Apache Airflow", "Typescript", "Next.js"]
+  }
+]
