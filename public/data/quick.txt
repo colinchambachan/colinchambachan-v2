@@ -5,6 +5,7 @@ Data + AI @ RBC
 Full Stack @ Workland
 Full Stack @ McMaster Satellite 
 Frontend @ Workland
+VP @ GDG McMaster
 
 Skills:
 Langs - Python, Java, SQL, Javascript + others

@@ -5,7 +5,7 @@ import { useState, useRef, useEffect } from "react";
 
 export default function Home() {
   type Paragraph = string[];
-  const [isQuickCopied, setQuickCopied] = useState<Boolean>(false);
+  const [isQuickCopied, setQuickCopied] = useState<boolean>(false);
   const modalRef = useRef<HTMLDialogElement>(null);
   const [quickContent, setQuickContent] = useState<string[][]>([]);
   const [firstTwoLines, setFirstTwoLines] = useState<string[]>([]);
