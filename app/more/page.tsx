@@ -3,7 +3,7 @@
 export default function More() {
   return (
     <div className="flex-col justify-items-center content-between">
-      <div className="pt-12 mt-[-2rem] md:mt-0 text-sm md:text-base  px-6 xl:px-72 py-4 h-[screen-10rem] overflow-hidden">
+      <div className="pt-2 lg:py-12 text-sm md:text-base  px-6 xl:px-72 py-4 h-[screen-10rem] overflow-hidden">
         <div className="flex text-left">
           <div className="mt-auto mb-auto">
             <h1
