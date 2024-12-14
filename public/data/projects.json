@@ -21,6 +21,13 @@
     "skills": ["Pandas", "Python"]
   },
   {
+    "name": "PraxAI",
+    "link": "https://github.com/colinchambachan/praxi",
+    "time": null,
+    "desc": "Learn languages by connecting with others in live chats, or connect and learn with AI. Developed at Deltahacks X",
+    "skills": ["Django", "OpenAI Dev Platform"]
+  },
+  {
     "name": "🏆 StudySpot",
     "link": "https://github.com/ypatel2022/study-spot",
     "time": null,
@@ -34,13 +41,7 @@
     "desc": "Website to give all past F1 race insights, including finishing positions, track history, lap records, etc. Featured on API's application gallery.",
     "skills": ["Next.js", "Javascript"]
   },
-  {
-    "name": "Spotisize",
-    "link": "https://github.com/ValueAchooMatthew/SpotiSize",
-    "time": null,
-    "desc": "Social media platform to give visual insights to your spotify listening. Compare your musical gallery with your friends!",
-    "skills": ["Next.js", "Typescript", "Spotify Dev Platform"]
-  },
+
   {
     "name": "WasteNoMore",
     "link": "https://github.com/colinchambachan/WasteNoMore",
