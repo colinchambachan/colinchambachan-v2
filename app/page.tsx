@@ -55,8 +55,10 @@ export default function Home() {
             src={hero}
             className="max-w-xs 2xl:max-w-sm md:mx-8 xl:mx-12 hidden md:block rounded-full shadow-2xl"
             alt="hi"
+            width={400}
+            height={400}
+            style={{ objectFit: "cover" }}
             priority={true}
-            placeholder="blur"
           />
           <div className="mt-auto mb-auto" data-aos="fade-up">
             <h1 className="text-5xl font-bold">Hi, I'm Colin</h1>
