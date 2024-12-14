@@ -3,11 +3,11 @@
 export default function About() {
   return (
     <div className="flex-col justify-items-center content-between">
-      <div className="pt-12 w-screen px-12 xl:px-72 py-4 h-[screen-10rem]">
+      <div className="pt-12 text-sm md:text-base w-screen px-6 xl:px-72 py-4 h-[screen-10rem] overflow-hidden	">
         <div className="flex text-left">
           <div className="mt-auto mb-auto">
             <h1
-              className="text-4xl mb-2 md:mb-6 text-primary font-bold"
+              className="text-2xl md:text-4xl mb-2 md:mb-6 text-primary font-bold"
               data-aos="fade-left"
             >
               &gt; about
@@ -17,20 +17,53 @@ export default function About() {
               data-aos="fade-left"
               data-aos-delay="600"
             >
-              Hey! I'm Colin, a Software Engineering student at McMaster
-              University! <br></br>
+              Hey! I'm <span className="text-primary font-bold">Colin</span>, a
+              Software Engineering student from McMaster University! <br></br>
               <br></br>
-              I'm particularly interested in Cloud, Data, and AI which I've
-              explored through past internships, projects, and other
+              I'm particularly interested in{" "}
+              <span className="text-primary font-bold">
+                Cloud, Data, and AI{" "}
+              </span>
+              which I've explored through past internships, projects, and other
               opportunities. In my experience, I've received a lot of advice
               about being a "t-shaped" developer, so I'm also always looking to
-              learn new things and diversify my skill set. <br></br>
-              <br></br>Outside of academics, I'm usually occupied with an
-              extracurricular, playing the guitar, or playing some sort of
-              sport.
+              learn new things and diversify my skill set.
+              <br></br>
+              <div className="hidden md:block">
+                <br></br>
+                I'm currently working at RBC Borealis, where I'm working on two
+                tools under the{" "}
+                <a
+                  className="text-primary font-bold underline underline-offset-4"
+                  href="https://rbcborealis.com/applications/lumina-platform/"
+                >
+                  Lumina Data Platform{" "}
+                </a>
+                . I've been able to work on projects both in{" "}
+                <span className="text-primary font-bold">
+                  Data Engineering{" "}
+                </span>
+                (creating a data pipeline to analyze cluster wastage) and{" "}
+                <span className="text-primary font-bold">Generative AI </span>
+                (creating an LLM-based agent to migrate legacy code).
+                <br></br>
+              </div>
+              <br></br>Outside of academics & programming, I'm usually occupied
+              with an extracurricular, playing the guitar, or playing some sort
+              of sport.
+              <br></br>
+              <br></br>
+              I'm happy to speak more about any of my experiences, projects, or
+              interests. Feel free to reach out on Linkedin or at{" "}
+              <a
+                href="mailto:colin.chambachan@gmail.com"
+                className="text-primary font-bold underline underline-offset-4"
+              >
+                colin.chambachan@gmail.com
+              </a>
             </div>
             <h1
-              className="text-4xl mb-2 md:mb-6 text-primary font-bold"
+              className="text-2xl md:text-4xl mb-2 md:mb-6 text-primary font-bold"
               data-aos="fade-left"
               data-aos-delay="1200"
             >
