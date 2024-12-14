@@ -2,43 +2,13 @@
 import Image from "next/image";
 import hero from "/public/hero.jpg";
 import { useState, useRef, useEffect } from "react";
+import Modal from "./_components/modal";
 
 export default function Home() {
   type Paragraph = string[];
-  const [isQuickCopied, setQuickCopied] = useState<boolean>(false);
-  const modalRef = useRef<HTMLDialogElement>(null);
   const [quickContent, setQuickContent] = useState<string[][]>([]);
   const [firstTwoLines, setFirstTwoLines] = useState<string[]>([]);
-
-  const handleModalClose = () => {
-    setQuickCopied(false);
-  };
-
-  const handleClipboardCopy = () => {
-    let content = "";
-
-    firstTwoLines.forEach((line) => {
-      content += line + "\n";
-    });
-
-    quickContent.forEach((section, index) => {
-      section.forEach((line) => {
-        content += line + "\n";
-      });
-      content += "\n";
-    });
-
-    // copy the formatted content to clipboard
-    navigator.clipboard
-      .writeText(content)
-      .then(() => {
-        setQuickCopied(true);
-        setTimeout(() => setQuickCopied(false), 2000);
-      })
-      .catch((error) => {
-        console.error("Failed to copy text:", error);
-      });
-  };
+  const [showModal, setShowModal] = useState<boolean>(false);
 
   useEffect(() => {
     // fetch the text file
@@ -97,9 +67,9 @@ export default function Home() {
             </p>
             <button
               className="btn btn-primary"
-              onClick={() =>
-                document.getElementById("quick_modal")?.showModal()
-              }
+              onClick={() => {
+                setShowModal(true);
+              }}
             >
               View Cheatsheet
             </button>
@@ -148,66 +118,12 @@ export default function Home() {
         </div>
       </div>
       {/* Modal */}
-      <dialog
-        id="quick_modal"
-        className="modal"
-        ref={modalRef}
-        onClose={handleModalClose}
-      >
-        <div className="modal-box">
-          <h3 className="font-bold text-lg">~/Colin.zip</h3>
-          {/* <h6 className="text-gray-500">$ unzip Colin.zip</h6> */}
-          <h6 className="text-gray-500">
-            $ unzip Colin.zip && cat Colin/quick.txt
-          </h6>
-          {/* <p className="py-4">Press ESC key or click outside to close</p> */}
-          <div className="bg-gray-100 p-4 mt-3 rounded-md">
-            <div className="mb-3 flex justify-between">
-              <div className="text-lg">
-                <strong>Colin Chambachan</strong>
-              </div>
-              <div
-                onClick={() => {
-                  handleClipboardCopy();
-                  setQuickCopied(true);
-                }}
-                className="transition-colors duration-600 cursor-pointer bg-gray-200 hover:bg-gray-300 rounded-md mt-[-0.3rem] px-2 py-1"
-              >
-                {!isQuickCopied && (
-                  <i className="bi bi-clipboard text-gray-500"></i>
-                )}
-                {isQuickCopied && (
-                  <i className="bi bi-clipboard-check text-gray-500"></i>
-                )}
-              </div>
-            </div>
-            <div>
-              {quickContent.map((paragraph: Paragraph, index: number) => (
-                <div key={index} style={{ marginBottom: "1rem" }}>
-                  {paragraph.map((line: string, lineIndex: number) => (
-                    <p
-                      key={lineIndex}
-                      className={`${
-                        lineIndex === 0
-                          ? "font-bold underline"
-                          : "text-gray-600"
-                      }`}
-                      style={{
-                        margin: 0,
-                      }}
-                    >
-                      {line}
-                    </p>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-        <form method="dialog" className="modal-backdrop">
-          <button>close</button>
-        </form>
-      </dialog>
+      <Modal
+        firstTwoLines={firstTwoLines}
+        quickContent={quickContent}
+        showModal={showModal}
+        setShowModal={setShowModal}
+      />
     </div>
   );
 }
