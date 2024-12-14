@@ -33,10 +33,6 @@ export default function Experience() {
     fetchExperienceJSON();
   }, []);
 
-  useEffect(() => {
-    // Refresh AOS after experiences are fetched
-    Aos.refresh();
-  }, [experiences]);
   return (
     <div className="flex-col justify-items-center content-between">
       <AOSInit />
@@ -70,7 +66,7 @@ export default function Experience() {
                     <h2 className="text-lg md:text-2xl card-title">
                       {experience.org}
                     </h2>
-                    <div className="flex justify-between">
+                    <div className="flex flex-wrap justify-between">
                       <div className="italic">{experience.role}</div>
                       <div className="italic">{experience.time}</div>
                     </div>
