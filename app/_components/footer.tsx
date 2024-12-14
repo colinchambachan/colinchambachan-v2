@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <div className="w-full mt-1 pb-4 px-4 xl:px-64 ">
+    <div className="w-full mt-1 pb-4 xl:px-64 ">
       <div className="flex-grow border-t mt-3 mb-4 text-neutral"></div>
-      <footer className="footer flex-nowrap text-neutral-content items-center mt-auto">
+      <footer className="footer px-4 flex-nowrap text-neutral-content items-center mt-auto">
         <aside className="grid-flow-col items-center">
           {/* <svg
           width="36"
