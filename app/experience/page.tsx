@@ -33,59 +33,61 @@ export default function Experience() {
   }, []);
 
   return (
-    <div className="flex-col justify-items-center content-between">
-      <AOSInit />
-      <div className="pt-2 text-sm md:text-base w-screen px-6 xl:px-72 lg:py-8 h-[screen-10rem] overflow-hidden">
-        <h1
-          className="text-2xl md:text-4xl mb-2 md:mb-6 text-primary font-bold"
-          data-aos="fade-left"
-        >
-          &gt; experience
-        </h1>
-        {/* Use CSS grid to ensure only two cards per row */}
-        <div
-          className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center"
-          id="parent"
-          // data-aos="fade-left"
-          // data-aos-delay="600"
-        >
-          {/* Repeatable card */}
-          {experiences?.map((experience: Experience, index: number) => {
-            const cardDelay = 600 + index * 500;
-            return (
-              <div
-                key={experience.org + experience.role}
-                className="card glass h-full w-100 m-2 mb-4 cursor-pointer hover:text-primary transition ease-in-out duration-1000"
-                data-aos-anchor="#parent"
-                data-aos="fade-left"
-                data-aos-delay={cardDelay}
-              >
-                <a href={experience.link} target="_blank" className="h-full">
-                  <div className="card-body h-full">
-                    <h2 className="text-lg md:text-2xl card-title">
-                      {experience.org}
-                    </h2>
-                    <div className="flex flex-wrap justify-between">
-                      <div className="italic">{experience.role}</div>
-                      <div className="italic">{experience.time}</div>
+    experiences && (
+      <div className="flex-col justify-items-center content-between">
+        <AOSInit />
+        <div className="pt-2 text-sm md:text-base w-screen px-6 xl:px-72 lg:py-8 h-[screen-10rem] overflow-hidden">
+          <h1
+            className="text-2xl md:text-4xl mb-2 md:mb-6 text-primary font-bold"
+            data-aos="fade-left"
+          >
+            &gt; experience
+          </h1>
+          {/* Use CSS grid to ensure only two cards per row */}
+          <div
+            className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center"
+            id="parent"
+            // data-aos="fade-left"
+            // data-aos-delay="600"
+          >
+            {/* Repeatable card */}
+            {experiences?.map((experience: Experience, index: number) => {
+              const cardDelay = 600 + index * 500;
+              return (
+                <div
+                  key={experience.org + experience.role}
+                  className="card glass h-full w-100 m-2 mb-4 cursor-pointer hover:text-primary transition ease-in-out duration-1000"
+                  data-aos-anchor="#parent"
+                  data-aos="fade-left"
+                  data-aos-delay={cardDelay}
+                >
+                  <a href={experience.link} target="_blank" className="h-full">
+                    <div className="card-body h-full">
+                      <h2 className="text-lg md:text-2xl card-title">
+                        {experience.org}
+                      </h2>
+                      <div className="flex flex-wrap justify-between">
+                        <div className="italic">{experience.role}</div>
+                        <div className="italic">{experience.time}</div>
+                      </div>
+                      <div>{experience.desc}</div>
+                      <div className="card-actions mt-auto justify-end">
+                        {experience.skills?.map((skill: string) => {
+                          return (
+                            <div key={skill} className="badge badge-outline">
+                              {skill}
+                            </div>
+                          );
+                        })}
+                      </div>
                     </div>
-                    <div>{experience.desc}</div>
-                    <div className="card-actions mt-auto justify-end">
-                      {experience.skills?.map((skill: string) => {
-                        return (
-                          <div key={skill} className="badge badge-outline">
-                            {skill}
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
-                </a>
-              </div>
-            );
-          })}
+                  </a>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
-    </div>
+    )
   );
 }
