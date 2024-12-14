@@ -3,7 +3,7 @@
     "name": "PortfolioPulse",
     "link": null,
     "time": "Current",
-    "desc": "Cloud automation workflow, which takes portfolio pdf statements, and devlivers daily insights to your inbox. Currently ~85% complete until MVP.",
+    "desc": "Cloud automation workflow, which takes portfolio pdf statements, and delivers daily insights to your inbox. Currently ~85% complete until MVP.",
     "skills": ["AWS", "Python"]
   },
   {
@@ -11,7 +11,13 @@
     "link": "https://github.com/colinchambachan/AutoMate",
     "time": null,
     "desc": "Generative AI Chrome extension used to create end-to-end workflows, meaning start at google.com and end the task with an amazon purchase, all done for you. Developed at Hack the North 2024.",
-    "skills": ["Spark", "Hadoop", "Python", "Langchain", "LangGraph"]
+    "skills": [
+      "Express.js",
+      "Node.js",
+      "Javascript",
+      "Cohere LLMs",
+      "OpenAI LLMs"
+    ]
   },
   {
     "name": "StatementStandardizer",
