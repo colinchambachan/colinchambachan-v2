@@ -23,7 +23,7 @@ export default function Navbar() {
           <button className="mx-2 hover:text-primary">more</button>
         </Link>
       </div>
-      <div className="dropdown dropdown-bottom dropdown-end">
+      <div className="md:hidden dropdown dropdown-bottom dropdown-end">
         <div tabIndex={0} role="button" className="btn btn-ghost rounded-btn">
           <i className="bi bi-list text-lg"></i>
         </div>
