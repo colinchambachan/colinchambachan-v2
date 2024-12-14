@@ -25,11 +25,11 @@ export default function Navbar() {
       </div>
       <div className="md:hidden dropdown dropdown-bottom dropdown-end">
         <div tabIndex={0} role="button" className="btn btn-ghost rounded-btn">
-          <i className="bi bi-list text-lg"></i>
+          <i className="bi bi-list"></i>
         </div>
         <ul
           tabIndex={0}
-          className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow-lg"
+          className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 shadow-2xl"
         >
           <li>
             <Link href="/about">about</Link>
