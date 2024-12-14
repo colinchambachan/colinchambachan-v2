@@ -1,0 +1,58 @@
+[
+  {
+    "name": "PortfolioPulse",
+    "link": null,
+    "time": "Current",
+    "desc": "Cloud automation workflow, which takes portfolio pdf statements, and devlivers daily insights to your inbox. Currently ~85% complete until MVP.",
+    "skills": ["AWS", "Python"]
+  },
+  {
+    "name": "AutoMate",
+    "link": "https://github.com/colinchambachan/AutoMate",
+    "time": null,
+    "desc": "Generative AI Chrome extension used to create end-to-end workflows, meaning start at google.com and end the task with an amazon purchase, all done for you. Developed at Hack the North 2024.",
+    "skills": ["Spark", "Hadoop", "Python", "Langchain", "LangGraph"]
+  },
+  {
+    "name": "StatementStandardizer",
+    "link": "https://github.com/colinchambachan/Statements-Standardizer",
+    "time": null,
+    "desc": "Aggregation script which takes transactions csv's from multiple banks, consolidates into one sheet, and splits transactions by income and expense. A real time-saver in my personal finances.",
+    "skills": ["Pandas", "Python"]
+  },
+  {
+    "name": "🏆 StudySpot",
+    "link": "https://github.com/ypatel2022/study-spot",
+    "time": null,
+    "desc": "Social media platform designed to track and promote the time students spend studying in the library. Sponsor winner at Deltahacks IX.",
+    "skills": ["Firebase", "Next.js", "Typescript", "Google Maps Dev Platform"]
+  },
+  {
+    "name": "F1 Archive",
+    "link": "https://f1archive.vercel.app/",
+    "time": null,
+    "desc": "Website to give all past F1 race insights, including finishing positions, track history, lap records, etc. Featured on API's application gallery.",
+    "skills": ["Next.js", "Javascript"]
+  },
+  {
+    "name": "Spotisize",
+    "link": "https://github.com/ValueAchooMatthew/SpotiSize",
+    "time": null,
+    "desc": "Social media platform to give visual insights to your spotify listening. Compare your musical gallery with your friends!",
+    "skills": ["Next.js", "Typescript", "Spotify Dev Platform"]
+  },
+  {
+    "name": "WasteNoMore",
+    "link": "https://github.com/colinchambachan/WasteNoMore",
+    "time": null,
+    "desc": "A python script developed to create a workflow for automatically recycling (or disposing of) containers, dependant on their suitability.",
+    "skills": ["Arduinos", "Raspberry Pi", "Python"]
+  },
+  {
+    "name": "🔗 Various Other Projects",
+    "link": "https://github.com/colinchambachan",
+    "time": null,
+    "desc": "Other projects, which I consider a little bit older and out of date, can still be found on my Github as it shows my development as a developer.",
+    "skills": []
+  }
+]
