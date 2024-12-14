@@ -73,7 +73,7 @@ export default function Home() {
             >
               View Cheatsheet
             </button>
-            <nav className="flex md:hidden py-4 place-self-center">
+            <nav className="flex md:hidden py-4 justify-center">
               <a
                 href={"https://www.linkedin.com/in/colinchambachan/"}
                 target="_blank"

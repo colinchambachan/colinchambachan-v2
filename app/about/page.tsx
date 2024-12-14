@@ -3,12 +3,13 @@
 export default function About() {
   return (
     <div className="flex-col justify-items-center content-between">
-      <div className="pt-12 text-sm md:text-base w-screen px-6 xl:px-72 py-4 h-[screen-10rem] overflow-hidden	">
+      <div className="pt-2 lg:pt-12 text-sm md:text-base w-screen px-6 xl:px-72 py-4 h-[screen-10rem] overflow-hidden	">
         <div className="flex text-left">
           <div className="mt-auto mb-auto">
             <h1
               className="text-2xl md:text-4xl mb-2 md:mb-6 text-primary font-bold"
               data-aos="fade-left"
+              id="title"
             >
               &gt; about
             </h1>
@@ -66,20 +67,36 @@ export default function About() {
               className="text-2xl md:text-4xl mb-2 md:mb-6 text-primary font-bold"
               data-aos="fade-left"
               data-aos-delay="1200"
+              data-aos-anchor="#title"
             >
               &gt; skills
             </h1>
 
-            <div className="mb-2" data-aos="fade-left" data-aos-delay="1800">
+            <div
+              className="mb-2"
+              data-aos="fade-left"
+              data-aos-delay="1800"
+              data-aos-anchor="#title"
+            >
               <span className="font-bold">Lanaguages: </span> Python,
               Javascript, Java, SQL, HTML, CSS, C, C++, Bash, MATLAB
             </div>
-            <div className="mb-2" data-aos="fade-left" data-aos-delay="1900">
+            <div
+              className="mb-2"
+              data-aos="fade-left"
+              data-aos-delay="1900"
+              data-aos-anchor="#title"
+            >
               <span className="font-bold">Technologies: </span> Node.js,
               Express.js, Spark, Hadoop, scikit-learn, Pandas, Next.js,
               React.js, Angular, Tailwind, JUnit
             </div>
-            <div className="mb-2" data-aos="fade-left" data-aos-delay="2000">
+            <div
+              className="mb-2"
+              data-aos="fade-left"
+              data-aos-delay="2000"
+              data-aos-anchor="#title"
+            >
               <span className="font-bold">Tools: </span> AWS, Tableau, MySQL,
               PostgreSQL, Firebase, SonarQube, JIRA, Git, Linux, Unix, Figma,
               Arduino, Microsoft Excel

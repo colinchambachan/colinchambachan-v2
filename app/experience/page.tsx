@@ -35,7 +35,7 @@ export default function Experience() {
   return (
     <div className="flex-col justify-items-center content-between">
       <AOSInit />
-      <div className="pt-2  text-sm md:text-base w-screen px-6 xl:px-72 lg:py-12 h-[screen-10rem] overflow-hidden">
+      <div className="pt-2 text-sm md:text-base w-screen px-6 xl:px-72 lg:py-12 h-[screen-10rem] overflow-hidden">
         <h1
           className="text-2xl md:text-4xl mb-2 md:mb-6 text-primary font-bold"
           data-aos="fade-left"
@@ -55,7 +55,7 @@ export default function Experience() {
             return (
               <div
                 key={experience.org + experience.role}
-                className="card glass h-full w-100 m-2 cursor-pointer hover:text-primary transition ease-in-out duration-1000"
+                className="card glass h-full w-100 m-2 mb-4 cursor-pointer hover:text-primary transition ease-in-out duration-1000"
                 data-aos-anchor="#parent"
                 data-aos="fade-left"
                 data-aos-delay={cardDelay}
