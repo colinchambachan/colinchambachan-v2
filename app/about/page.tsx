@@ -3,7 +3,7 @@
 export default function About() {
   return (
     <div className="flex-col justify-items-center content-between">
-      <div className="pt-2 lg:pt-12 text-sm md:text-base w-screen px-6 xl:px-72 py-4 h-[screen-10rem] overflow-hidden	">
+      <div className=" text-sm md:text-base w-screen px-6 xl:px-72  	">
         <div className="flex text-left">
           <div className="mt-auto mb-auto">
             <h1

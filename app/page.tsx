@@ -47,8 +47,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex-col justify-items-center content-between ">
-      <div className="hero my-[-5rem] md:mt-[-10rem] justify-self-center self-center min-h-screen">
+    <div className=" justify-items-center content-between h-full ">
+      <div className="hero justify-self-center self-center ">
         {/* <div className="hero h-96"> */}
         <div className="flex justify-center text-center xl:justify-normal md:text-left">
           <Image
