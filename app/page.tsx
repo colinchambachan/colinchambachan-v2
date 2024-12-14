@@ -63,7 +63,7 @@ export default function Home() {
               <em>Currently: Data + AI @ RBC</em>
             </h2>
             <p className="pt-1 pb-4 text-primary font-extrabold">
-              Passionate about Cloud, Data, and AI
+              Passionate about Cloud, Data, and AI (test dev)
             </p>
             <button
               className="btn btn-primary"
