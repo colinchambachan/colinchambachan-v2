@@ -4,7 +4,7 @@
     "role": "Software Engineering Intern",
     "link": "https://rbcborealis.com/",
     "time": "Sep 2024 - Present",
-    "desc": "Lumina Data Platform - On Data Engineering side, working on a data pipeline to analyze memory wastage on the cluster. On Gen AI side, working on changes and features to migration service for legacy languages (COBOL, SAS, etc.)",
+    "desc": "Lumina Data Platform - On Data Engineering side, working on a data pipeline to analyze memory wastage on the cluster. On the Gen AI side, working on changes and features to a LLM-based migration service for legacy languages (COBOL, SAS, etc.)",
     "skills": ["Spark", "Hadoop", "Python", "Langchain", "LangGraph"]
   },
   {
@@ -12,7 +12,7 @@
     "role": "Software Developer",
     "link": "https://mcmasterneudose.ca/",
     "time": "Sep 2023 - Present",
-    "desc": "Mission Operation & Controls Dashboard - used for satellite communication and job automation",
+    "desc": "Mission Operation & Controls Dashboard - used for satellite communication and job automation. A recent initiative developed was a script to automate the ground station antenna by predicting the satellite passover location. ",
     "skills": ["Python", "Apache Airflow", "Typescript", "Next.js"]
   },
   {
