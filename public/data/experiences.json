@@ -4,7 +4,7 @@
     "role": "Software Engineering Intern",
     "link": "https://rbcborealis.com/",
     "time": "Sep 2024 - Present",
-    "desc": "Lumina Data Platform - On Data Engineering side, working on a data pipeline to analyze memory wastage on the cluster. On Gen AI side, working on changes and features to migration service for legacy languages (COBOL, SAS, etc.)",
+    "desc": "Lumina Data Platform - On Data Engineering side, working on a data pipeline to analyze memory wastage on the cluster. On the Gen AI side, working on changes and features to a LLM-based migration service for legacy languages (COBOL, SAS, etc.)",
     "skills": ["Spark", "Hadoop", "Python", "Langchain", "LangGraph"]
   },
   {

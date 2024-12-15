@@ -107,7 +107,14 @@ export default function More() {
               data-aos-delay="3000"
               data-aos-anchor="#parent"
             >
-              Reading is another interest of mine I try to keep up with. I'm
+              Reading is another interest of mine I try to keep up with. My
+              favourite book is <span className="italic">Ego is the Enemy</span>{" "}
+              by Ryan Holiday. Especially in this industry, where we're
+              continually learning and adapting, I think it's all the more
+              important to have an open mindset. Whether an experienced
+              developer or a new intern, I believe humility is extremely
+              important to long-term growth and is something I try to implement
+              into my leadership & engineering practices. <br /> <br /> I'm
               currently reading through{" "}
               <span className="italic">The Algebra of Happiness</span> by Scott
               Galloway, and my next planned read is{" "}
