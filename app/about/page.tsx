@@ -11,7 +11,7 @@ export default function About() {
               data-aos="fade-left"
               id="title"
             >
-              &gt; about
+              &gt; About
             </h1>
             <div
               className="mb-6 md:mb-12"
@@ -71,7 +71,7 @@ export default function About() {
               data-aos-delay="1200"
               data-aos-anchor="#title"
             >
-              &gt; skills
+              &gt; Skills
             </h1>
 
             <div
