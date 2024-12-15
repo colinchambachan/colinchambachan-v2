@@ -41,7 +41,7 @@ export default function Experience() {
             className="text-2xl md:text-4xl mb-2 md:mb-6 text-primary font-bold"
             data-aos="fade-left"
           >
-            &gt; experience
+            &gt; Experience
           </h1>
           {/* Use CSS grid to ensure only two cards per row */}
           <div
