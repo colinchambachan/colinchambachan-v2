@@ -5,6 +5,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import Navbar from "./_components/navbar";
 import Footer from "./_components/footer";
 import { AOSInit } from "./_components/aos";
+import { Analytics } from "@vercel/analytics/react";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -37,6 +38,7 @@ export default function RootLayout({
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         className="font-Domine antialiased min-h-screen flex flex-col "
       >
+        <Analytics />
         <Navbar />
         <main className="flex-grow flex items-center justify-center">
           {children}
