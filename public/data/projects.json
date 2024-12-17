@@ -23,7 +23,7 @@
     "name": "StatementStandardizer",
     "link": "https://github.com/colinchambachan/Statements-Standardizer",
     "time": null,
-    "desc": "Aggregation script which takes transactions csv's from multiple banks, consolidates into one sheet, and splits transactions by income and expense. A real time-saver in my personal finances.",
+    "desc": "Aggregation script which takes transactions csv's from multiple banks, splits transactions by income and expense, and consolidates this into one file . A real time-saver in my personal finances.",
     "skills": ["Pandas", "Python"]
   },
   {
