@@ -11,16 +11,24 @@ export default function Navbar() {
       </div>
       <div className="flex hidden md:inline font-semibold justify-between ">
         <Link href="/about">
-          <button className="mx-2 hover:text-primary">about</button>
+          <button className="mx-2 text-black transition-colors duration-300 ease-in-out hover:text-primary">
+            about
+          </button>
         </Link>
         <Link href="/experience">
-          <button className="mx-2 hover:text-primary">experience</button>
+          <button className="mx-2 text-black transition-colors duration-300 ease-in-out hover:text-primary">
+            experience
+          </button>
         </Link>
         <Link href="/projects">
-          <button className="mx-2 hover:text-primary">projects</button>
+          <button className="mx-2 text-black transition-colors duration-300 ease-in-out hover:text-primary">
+            projects
+          </button>
         </Link>
         <Link href="/more">
-          <button className="mx-2 hover:text-primary">more</button>
+          <button className="mx-2 text-black transition-colors duration-300 ease-in-out hover:text-primary">
+            more
+          </button>
         </Link>
       </div>
       <div className="md:hidden dropdown dropdown-bottom dropdown-end">

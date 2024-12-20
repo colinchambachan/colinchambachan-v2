@@ -62,7 +62,7 @@ export default function Experience() {
                   data-aos-delay={cardDelay}
                 >
                   <a href={experience.link} target="_blank" className="h-full">
-                    <div className="card-body h-full text-black transition-colors duration-500 ease-in-out hover:text-primary">
+                    <div className="card-body h-full text-black transition-colors duration-300 ease-in-out hover:text-primary">
                       <div>
                         <h2 className="text-lg md:text-2xl card-title">
                           {experience.org}

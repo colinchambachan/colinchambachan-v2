@@ -66,7 +66,7 @@ export default function Projects() {
                     <div
                       className={`card-body h-full ${
                         project.link
-                          ? "text-black transition-colors duration-500 ease-in-out hover:text-primary"
+                          ? "text-black transition-colors duration-300 ease-in-out hover:text-primary"
                           : ""
                       }`}
                     >
