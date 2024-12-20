@@ -44,7 +44,7 @@
     "name": "F1 Archive",
     "link": "https://f1archive.vercel.app/",
     "time": null,
-    "desc": "Website to give all past F1 race insights, including finishing positions, track history, lap records, etc. Featured on API's application gallery.",
+    "desc": "Website to give all past F1 race insights, including finishing positions, track history, lap records, etc. 50+ users and featured on API's application gallery.",
     "skills": ["Next.js", "Javascript"]
   },
 
