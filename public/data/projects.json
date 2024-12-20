@@ -23,14 +23,14 @@
     "name": "StatementStandardizer",
     "link": "https://github.com/colinchambachan/Statements-Standardizer",
     "time": null,
-    "desc": "Aggregation script which takes transactions csv's from multiple banks, consolidates into one sheet, and splits transactions by income and expense. A real time-saver in my personal finances.",
+    "desc": "Aggregation script which takes transactions csv's from multiple banks, splits transactions by income and expense, and consolidates this into one file . A real time-saver in my personal finances.",
     "skills": ["Pandas", "Python"]
   },
   {
     "name": "PraxAI",
     "link": "https://github.com/colinchambachan/praxi",
     "time": null,
-    "desc": "Learn languages by connecting with others in live chats, or connect and learn with AI. Developed at Deltahacks X",
+    "desc": "Learn languages by connecting with others in live chats, or connect and learn with AI. Developed at Deltahacks X.",
     "skills": ["Django", "OpenAI Dev Platform"]
   },
   {
@@ -44,7 +44,7 @@
     "name": "F1 Archive",
     "link": "https://f1archive.vercel.app/",
     "time": null,
-    "desc": "Website to give all past F1 race insights, including finishing positions, track history, lap records, etc. Featured on API's application gallery.",
+    "desc": "Website to give all past F1 race insights, including finishing positions, track history, lap records, etc. 50+ users and featured on API's application gallery.",
     "skills": ["Next.js", "Javascript"]
   },
 

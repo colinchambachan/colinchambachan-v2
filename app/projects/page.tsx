@@ -56,16 +56,20 @@ export default function Projects() {
                 <div
                   key={project.name}
                   className={`card glass h-full w-100 m-2  ${
-                    project.link
-                      ? " cursor-pointer hover:text-primary transition ease-in-out duration-1000"
-                      : ""
+                    project.link ? " cursor-pointer" : ""
                   }`}
                   data-aos-anchor="#parent"
                   data-aos="fade-left"
                   data-aos-delay={cardDelay}
                 >
                   <a href={project.link} target="_blank" className="h-full">
-                    <div className="card-body h-full">
+                    <div
+                      className={`card-body h-full ${
+                        project.link
+                          ? "text-black transition-colors duration-500 ease-in-out hover:text-primary"
+                          : ""
+                      }`}
+                    >
                       <div className="flex justify-between">
                         <h2 className="text-lg md:text-2xl card-title">
                           {project.name}

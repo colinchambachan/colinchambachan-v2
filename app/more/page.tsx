@@ -61,6 +61,7 @@ export default function More() {
               <a
                 className="text-primary font-bold underline underline-offset-4"
                 href="https://cloud.google.com/blog/topics/google-cloud-next/welcome-to-google-cloud-next-23"
+                target="_blank"
               >
                 here{" "}
               </a>

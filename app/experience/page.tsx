@@ -56,21 +56,23 @@ export default function Experience() {
               return (
                 <div
                   key={experience.org + experience.role}
-                  className="card glass h-full w-100 m-2 mb-4 cursor-pointer hover:text-primary transition ease-in-out duration-1000"
+                  className="card glass h-full w-100 m-2 mb-4 cursor-pointer "
                   data-aos-anchor="#parent"
                   data-aos="fade-left"
                   data-aos-delay={cardDelay}
                 >
                   <a href={experience.link} target="_blank" className="h-full">
-                    <div className="card-body h-full">
-                      <h2 className="text-lg md:text-2xl card-title">
-                        {experience.org}
-                      </h2>
-                      <div className="flex flex-wrap justify-between">
-                        <div className="italic">{experience.role}</div>
-                        <div className="italic">{experience.time}</div>
+                    <div className="card-body h-full text-black transition-colors duration-500 ease-in-out hover:text-primary">
+                      <div>
+                        <h2 className="text-lg md:text-2xl card-title">
+                          {experience.org}
+                        </h2>
+                        <div className="flex flex-wrap justify-between">
+                          <div className="italic">{experience.role}</div>
+                          <div className="italic">{experience.time}</div>
+                        </div>
+                        <div>{experience.desc}</div>
                       </div>
-                      <div>{experience.desc}</div>
                       <div className="card-actions mt-auto justify-end">
                         {experience.skills?.map((skill: string) => {
                           return (
