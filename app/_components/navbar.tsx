@@ -1,7 +1,20 @@
 import Image from "next/image";
 import logo from "/public/logosCropped.jpg";
 import Link from "next/link";
+
+interface LinkElement {
+  name: string;
+  link: string;
+}
+
 export default function Navbar() {
+  const links: LinkElement[] = [
+    { name: "about", link: "about" },
+    { name: "experience", link: "experience" },
+    { name: "projects", link: "projects" },
+    { name: "more", link: "more" },
+  ];
+
   return (
     <div className="navbar z-50 bg-base-100 xl:px-64 py-4 ">
       <div className="flex-grow">
@@ -10,26 +23,13 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="flex hidden md:inline font-semibold justify-between ">
-        <Link href="/about">
-          <button className="mx-2 text-black transition-colors duration-300 ease-in-out hover:text-primary">
-            about
-          </button>
-        </Link>
-        <Link href="/experience">
-          <button className="mx-2 text-black transition-colors duration-300 ease-in-out hover:text-primary">
-            experience
-          </button>
-        </Link>
-        <Link href="/projects">
-          <button className="mx-2 text-black transition-colors duration-300 ease-in-out hover:text-primary">
-            projects
-          </button>
-        </Link>
-        <Link href="/more">
-          <button className="mx-2 text-black transition-colors duration-300 ease-in-out hover:text-primary">
-            more
-          </button>
-        </Link>
+        {links.map((link) => (
+          <Link key={link.name} href={`/${link.link}`}>
+            <button className="mx-2 text-black transition-colors duration-300 ease-in-out hover:text-primary">
+              {link.name}
+            </button>
+          </Link>
+        ))}
       </div>
       <div className="md:hidden dropdown dropdown-bottom dropdown-end">
         <div tabIndex={0} role="button" className="btn btn-ghost rounded-btn">
