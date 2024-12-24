@@ -115,7 +115,7 @@ export default function More() {
               important to have an open mindset. Whether an experienced
               developer or a new intern, I believe humility is extremely
               important to long-term growth and is something I try to implement
-              into my leadership & engineering practices. <br /> <br /> I'm
+              into my engineering & leadership practices. <br /> <br /> I'm
               currently reading through{" "}
               <span className="italic">The Algebra of Happiness</span> by Scott
               Galloway, and my next planned read is{" "}
