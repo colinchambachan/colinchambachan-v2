@@ -99,9 +99,9 @@ export default function About() {
               data-aos-delay="2000"
               data-aos-anchor="#title"
             >
-              <span className="font-bold">Tools: </span> AWS, Tableau, MySQL,
-              PostgreSQL, Firebase, SonarQube, JIRA, Git, Linux, Unix, Figma,
-              Arduino, Microsoft Excel
+              <span className="font-bold">Tools: </span> Tools: AWS, Tableau,
+              MySQL, PostgreSQL, Docker, Firebase, SonarQube, JIRA, Git, Linux,
+              Figma, Arduino, Excel
             </div>
           </div>
         </div>
