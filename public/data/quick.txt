@@ -10,7 +10,7 @@ VP @ GDG McMaster
 Skills:
 Langs - Python, Java, SQL, Javascript + others
 Tech - Spark, Pandas, Express, React, Scikit + others
-Tools - AWS, MySQL, Tableau, Firebase + others
+Tools - AWS, MySQL, Tableau, Docker + others
 
 Projects:
 PortfolioPulse - AWS -> Daily investment insights
