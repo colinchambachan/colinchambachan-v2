@@ -35,7 +35,7 @@ export default function Projects() {
     projects && (
       <div className="flex-col justify-items-center content-between">
         <AOSInit />
-        <div className="pt-2  text-sm md:text-base w-screen px-6 xl:px-72 lg:py-12 h-[screen-10rem] overflow-hidden">
+        <div className="pt-2  text-sm md:text-base px-6 xl:px-72 lg:py-12 h-[screen-10rem] overflow-hidden">
           <h1
             className="text-2xl md:text-4xl mb-2 md:mb-6 text-primary font-bold"
             data-aos="fade-left"
