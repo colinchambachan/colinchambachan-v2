@@ -51,7 +51,12 @@ export default function Projects() {
           >
             {/* Repeatable card */}
             {projects?.map((project: Project, index: number) => {
-              const cardDelay = index < 2 ? 600 + index * 400 : 1400;
+              const cardDelay =
+                index < 2
+                  ? 600 + index * 400
+                  : index % 2 == 0
+                  ? 1200 + index * 100
+                  : 1200 + (index - 1) * 100;
               return (
                 <div
                   key={project.name}
