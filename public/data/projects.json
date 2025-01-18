@@ -3,7 +3,7 @@
     "name": "PortfolioPulse",
     "link": "https://github.com/colinchambachan/PortfolioPulse",
     "time": null,
-    "desc": "Cloud automation workflow, which takes portfolio account statements, tracks your positions, and delivers daily insights and the latest related headlines to your inbox/",
+    "desc": "Cloud automation workflow, which takes portfolio account statements, tracks your positions, and delivers daily insights and the latest related headlines to your inbox.",
     "skills": ["AWS", "Python"]
   },
   {
