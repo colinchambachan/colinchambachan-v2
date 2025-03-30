@@ -64,7 +64,7 @@ export default function Home() {
             <div className="mt-auto mb-auto" data-aos="fade-up">
               <h1 className="text-5xl font-bold">Hi, I'm Colin</h1>
               <h2 className="py-2 text-gray-500">
-                <em>Currently: Data + AI @ RBC</em>
+                <em>Currently: Data + AI @ RBC Borealis</em>
               </h2>
               <p className="pt-1 pb-4 text-primary font-extrabold">
                 Passionate about Cloud, Data, and AI
