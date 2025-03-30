@@ -1,7 +1,7 @@
 Colin Chambachan - a non-exhaustive insight
 
 Experience:
-Data + AI @ RBC
+Data + AI @ RBC Borealis
 Full Stack @ Workland
 Full Stack @ McMaster Satellite 
 Frontend @ Workland

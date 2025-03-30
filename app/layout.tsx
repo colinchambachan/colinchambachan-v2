@@ -36,14 +36,16 @@ export default function RootLayout({
       <AOSInit />
       <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        className="font-Domine antialiased min-h-screen flex flex-col "
+        className="font-Domine antialiased min-h-screen flex flex-col"
       >
         <Analytics />
-        <Navbar />
-        <main className="flex-grow flex items-center justify-center">
-          {children}
-        </main>
-        <Footer />
+        <div className="flex flex-col min-h-screen">
+          <Navbar />
+          <main className="flex-grow flex items-center justify-center">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
