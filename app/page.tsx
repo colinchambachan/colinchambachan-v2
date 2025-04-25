@@ -138,6 +138,6 @@ export default function Home() {
         showModal={showModal}
         setShowModal={setShowModal}
       />
-    </>
+    </div>
   );
 }
