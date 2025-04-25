@@ -33,62 +33,67 @@ export default function Projects() {
 
   return (
     projects && (
-      <div className="flex-col justify-items-center content-between">
+      <div className="flex flex-col w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
         <AOSInit />
-        <div className="pt-2  text-sm md:text-base px-6 xl:px-72 lg:py-12 h-[screen-10rem] overflow-hidden">
+        <div className="w-full">
           <h1
-            className="text-2xl md:text-4xl mb-2 md:mb-6 text-primary font-bold"
+            className="text-2xl md:text-4xl mb-4 md:mb-6 text-primary font-bold"
             data-aos="fade-left"
           >
             &gt; Projects
           </h1>
-          {/* Use CSS grid to ensure only two cards per row */}
+
           <div
-            className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center"
+            className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 w-full"
             id="parent"
-            // data-aos="fade-left"
-            // data-aos-delay="600"
           >
-            {/* Repeatable card */}
             {projects?.map((project: Project, index: number) => {
-              const cardDelay =
-                index < 2
-                  ? 600 + index * 400
-                  : index % 2 == 0
-                  ? 1200 + index * 100
-                  : 1200 + (index - 1) * 100;
+              const cardDelay = index < 2 ? 600 + index * 300 : 1200;
               return (
                 <div
                   key={project.name}
-                  className={`card glass h-full w-100 m-2  ${
-                    project.link ? " cursor-pointer" : ""
+                  className={`card glass h-full w-full shadow-sm hover:shadow-md transition-shadow duration-300 ${
+                    project.link ? "cursor-pointer" : ""
                   }`}
                   data-aos-anchor="#parent"
                   data-aos="fade-left"
                   data-aos-delay={cardDelay}
                 >
-                  <a href={project.link} target="_blank" className="h-full">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    className="h-full"
+                    aria-label={`Read more about ${project.name}`}
+                  >
                     <div
-                      className={`card-body h-full ${
+                      className={`card-body h-full p-4 sm:p-5 ${
                         project.link
                           ? "text-black transition-colors duration-300 ease-in-out hover:text-primary"
                           : ""
                       }`}
                     >
-                      <div className="flex justify-between">
-                        <h2 className="text-lg md:text-2xl card-title">
-                          {project.name}
-                        </h2>
-                        {project.time && (
-                          <div className="italic">{project.time}</div>
-                        )}
+                      <div className="space-y-2">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                          <h2 className="text-lg md:text-xl font-bold card-title line-clamp-2">
+                            {project.name}
+                          </h2>
+                          {project.time && (
+                            <div className="text-gray-600 text-sm">
+                              {project.time}
+                            </div>
+                          )}
+                        </div>
+                        <div className="py-2 text-sm sm:text-base">
+                          {project.desc}
+                        </div>
                       </div>
-
-                      <div>{project.desc}</div>
-                      <div className="card-actions mt-auto justify-end">
+                      <div className="card-actions mt-3 flex flex-wrap gap-1 justify-end">
                         {project.skills?.map((skill: string) => {
                           return (
-                            <div key={skill} className="badge badge-outline">
+                            <div
+                              key={skill}
+                              className="badge badge-outline text-xs py-1"
+                            >
                               {skill}
                             </div>
                           );

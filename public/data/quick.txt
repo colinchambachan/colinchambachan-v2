@@ -2,9 +2,9 @@ Colin Chambachan - a non-exhaustive insight
 
 Experience:
 Data + AI @ RBC Borealis
-Full Stack @ Workland
+Open Source @ Google
 Full Stack @ McMaster Satellite 
-Frontend @ Workland
+Full Stack @ Workland
 VP @ GDG McMaster
 
 Skills:
