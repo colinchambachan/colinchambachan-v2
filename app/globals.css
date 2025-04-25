@@ -40,3 +40,48 @@ body {
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #a1a1a1;
 }
+
+/* Mobile-first responsive styles */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Improve touch targets for mobile */
+button,
+a {
+  @apply transition-all;
+}
+
+button:active,
+a:active {
+  @apply scale-95;
+}
+
+/* Better responsive spacing */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero {
+    padding: 1.5rem 0;
+  }
+
+  .btn {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Improve modal appearance on mobile */
+.modal-box {
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}

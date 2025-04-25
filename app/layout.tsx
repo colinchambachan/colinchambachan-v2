@@ -21,6 +21,8 @@ import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
   title: "Colin Chambachan",
   description: "Colin's Dev Portfolio",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({
@@ -32,6 +34,8 @@ export default function RootLayout({
     <html lang="en" data-theme="cmyk">
       <head>
         <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="format-detection" content="telephone=no" />
       </head>
       <AOSInit />
       <body
@@ -39,13 +43,11 @@ export default function RootLayout({
         className="font-Domine antialiased min-h-screen flex flex-col"
       >
         <Analytics />
-        <div className="flex flex-col min-h-screen">
-          <Navbar />
-          <main className="flex-grow flex items-center justify-center">
-            {children}
-          </main>
-          <Footer />
-        </div>
+        <Navbar />
+        <main className="flex-grow flex items-center justify-center py-8 w-full">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
