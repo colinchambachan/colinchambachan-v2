@@ -11,6 +11,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: {
+          DEFAULT: "var(--primary)",
+          focus: "var(--primary-focus)",
+          content: "var(--primary-content)",
+        },
       },
       fontFamily: {
         Domine: ["Domine", "serif"],

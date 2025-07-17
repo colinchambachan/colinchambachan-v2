@@ -23,6 +23,16 @@ export const metadata: Metadata = {
   description: "Colin's Dev Portfolio",
   viewport: "width=device-width, initial-scale=1, maximum-scale=5",
   themeColor: "#ffffff",
+  openGraph: {
+    title: "Colin Chambachan",
+    description: "Cloud, Data & AI Developer",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Colin Chambachan",
+    description: "Cloud, Data & AI Developer",
+  },
 };
 
 export default function RootLayout({
@@ -40,7 +50,7 @@ export default function RootLayout({
       <AOSInit />
       <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        className="font-Domine antialiased min-h-screen flex flex-col"
+        className="font-Domine antialiased min-h-screen flex flex-col bg-gradient-to-b from-white to-gray-50"
       >
         <Analytics />
         <Navbar />

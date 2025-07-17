@@ -101,10 +101,12 @@ const Modal: React.FC<ModalProps> = ({
                   <h3 className="font-bold text-base md:text-lg">
                     ~/Colin.zip
                   </h3>
-                  <button
+                  <motion.button
                     onClick={handleModalClose}
                     className="p-1 rounded-full hover:bg-gray-100 transition-colors cursor-pointer"
                     aria-label="Close modal"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +117,7 @@ const Modal: React.FC<ModalProps> = ({
                     >
                       <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
                     </svg>
-                  </button>
+                  </motion.button>
                 </div>
                 <h6 className="text-gray-500 text-xs sm:text-sm mb-3 md:mb-4">
                   $ unzip Colin.zip && cat Colin/quick.txt
@@ -142,9 +144,15 @@ const Modal: React.FC<ModalProps> = ({
                       )}
                     </motion.div>
                   </div>
-                  <div className="overflow-y-auto max-h-[50vh] md:max-h-none custom-scrollbar pr-2">
+                  <div className="overflow-y-auto max-h-[50vh] md:max-h-[60vh] custom-scrollbar pr-2">
                     {quickContent.map((paragraph: Paragraph, index: number) => (
-                      <div key={index} className="mb-4 last:mb-0">
+                      <motion.div
+                        key={index}
+                        className="mb-4 last:mb-0"
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: index * 0.1 }}
+                      >
                         {paragraph.map((line: string, lineIndex: number) => (
                           <p
                             key={lineIndex}
@@ -160,7 +168,7 @@ const Modal: React.FC<ModalProps> = ({
                             {line}
                           </p>
                         ))}
-                      </div>
+                      </motion.div>
                     ))}
                   </div>
                 </div>
