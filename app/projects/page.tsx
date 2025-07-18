@@ -52,7 +52,7 @@ export default function Projects() {
               return (
                 <div
                   key={project.name}
-                  className={`card glass h-full w-full shadow-sm hover:shadow-md transition-shadow duration-300 ${
+                  className={`card glass h-full w-full shadow-sm hover:shadow-md transition-shadow duration-300 outline outline-gray-300 outline-opacity-10 ${
                     project.link ? "cursor-pointer" : ""
                   }`}
                   data-aos-anchor="#parent"

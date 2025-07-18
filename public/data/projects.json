@@ -3,7 +3,7 @@
     "name": "PortfolioPulse",
     "link": "https://github.com/colinchambachan/PortfolioPulse",
     "time": null,
-    "desc": "Cloud automation workflow, which takes portfolio account statements, tracks your positions, and delivers daily insights and the latest related headlines to your inbox.",
+    "desc": "Cloud automation workflow, which takes portfolio account statements, tracks your positions, and delivers daily insights and the latest related headlines to your inbox. 50+ users, 1k USD from Microsoft for Startups.",
     "skills": ["AWS", "Python"]
   },
   {
@@ -30,7 +30,7 @@
     "name": "PraxAI",
     "link": "https://github.com/colinchambachan/praxi",
     "time": null,
-    "desc": "Learn languages by connecting with others in live chats, or connect and learn with AI. Developed at Deltahacks X.",
+    "desc": "Learn languages by connecting with others in live chats, or learn with AI. Developed at Deltahacks X.",
     "skills": ["Django", "OpenAI Dev Platform"]
   },
   {

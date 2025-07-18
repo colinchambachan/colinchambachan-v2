@@ -53,7 +53,7 @@ export default function Experience() {
               return (
                 <div
                   key={experience.org + experience.role}
-                  className="card glass h-full w-full shadow-sm hover:shadow-md transition-shadow duration-300"
+                  className="card glass h-full w-full shadow-sm hover:shadow-md transition-shadow duration-300 outline outline-gray-300 outline-opacity-10 "
                   data-aos-anchor="#parent"
                   data-aos="fade-left"
                   data-aos-delay={cardDelay}

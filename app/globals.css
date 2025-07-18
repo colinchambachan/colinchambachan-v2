@@ -6,6 +6,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #0060df;
+  --primary-focus: #0052cc;
+  --primary-content: #ffffff;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -20,6 +23,7 @@ body {
   background: var(--background);
   /* font-family: Arial, Helvetica, sans-serif; */
   position: relative;
+  overflow-x: hidden;
 }
 
 /* Custom scrollbar for modal content */
@@ -58,6 +62,20 @@ a:active {
   @apply scale-95;
 }
 
+/* Enhanced typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply tracking-tight;
+}
+
+p {
+  @apply leading-relaxed;
+}
+
 /* Better responsive spacing */
 @media (max-width: 640px) {
   h1 {
@@ -78,6 +96,41 @@ a:active {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Button enhancements */
+.btn {
+  @apply rounded-md font-medium transition-all duration-300;
+}
+
+/* Animation utilities */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* Improve modal appearance on mobile */
