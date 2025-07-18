@@ -45,22 +45,37 @@ export default function More() {
                 </a>
               </p>
               <p>
-                As a result of this experience, I got to attend{" "}
+                As a result of this experience, I first got to attend{" "}
                 <span className="text-primary font-bold">
                   Google Cloud Next '23
                 </span>{" "}
                 in{" "}
                 <span className="text-primary font-bold">
                   San Francisco, California
+                </span>{" "}
+                and{" "}
+                <span className="text-primary font-bold">Google IO '25</span> in{" "}
+                <span className="text-primary font-bold">
+                  Mountain View, California
                 </span>
                 . It was extremely interesting to see the newest innovations in
                 Data Services with Gen AI, and how companies are able to deliver
-                them at scale by leveraging the cloud. Naturally, this played a
+                them at scale by leveraging the cloud. We got the change to
+                connect with Google Engineers, and I was quite interested in the
+                working being done on the Gemini team. Naturally, this played a
                 big part in kick-starting my passion for Cloud, Data, and AI.
                 You can read more about Google Cloud Next '23{" "}
                 <a
                   className="text-primary font-bold underline underline-offset-4"
                   href="https://cloud.google.com/blog/topics/google-cloud-next/welcome-to-google-cloud-next-23"
+                  target="_blank"
+                >
+                  here
+                </a>{" "}
+                and more about Google IO '25{" "}
+                <a
+                  className="text-primary font-bold underline underline-offset-4"
+                  href="https://io.google/2025/"
                   target="_blank"
                 >
                   here
@@ -122,13 +137,76 @@ export default function More() {
                 growth and is something I try to implement into my engineering &
                 leadership practices.
               </p>
-              <p>
-                I'm currently reading through{" "}
-                <span className="italic">The Algebra of Happiness</span> by
-                Scott Galloway, and my next planned read is{" "}
-                <span className="italic">Thinking, Fast and Slow</span> by
-                Daniel Kahneman
-              </p>
+
+              {/* Reading Progress Table */}
+              <div className="mt-6">
+                <h3 className="text-lg md:text-xl font-semibold text-primary">
+                  Current Reading List
+                </h3>
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse border border-gray-300 dark:border-gray-600 text-sm md:text-base">
+                    <thead>
+                      <tr className="bg-gray-100 dark:bg-gray-800">
+                        <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left font-semibold">
+                          Status
+                        </th>
+                        <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left font-semibold">
+                          Book Title
+                        </th>
+                        <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left font-semibold">
+                          Author
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-black dark:text-white">
+                          Recently Read
+                        </td>
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic">
+                          The Algebra of Happiness
+                        </td>
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
+                          Scott Galloway
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-blue-600 dark:text-blue-400">
+                          Current Read
+                        </td>
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic">
+                          Thinking, Fast and Slow
+                        </td>
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
+                          Daniel Kahneman
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-black dark:text-white">
+                          Planned Read #1
+                        </td>
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic">
+                          The Creative Act: A Way of Being
+                        </td>
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
+                          Rick Rubin
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-black dark:text-white">
+                          Planned Read #2
+                        </td>
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic">
+                          The Personal MBA
+                        </td>
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
+                          Josh Kaufman
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </div>
