@@ -78,10 +78,10 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-blue-600 text-transparent bg-clip-text">
-              Hi, I'm Colin
+              Hi! I'm Colin
             </h1>
             <h2 className="mt-2 mb-1 text-gray-600 font-medium">
-              <em>Currently: Data + AI @ RBC</em>
+              <em>Currently: Data + AI @ RBC Borealis</em>
             </h2>
             <p className="mb-6 text-primary font-extrabold tracking-wide">
               Passionate about Cloud, Data, and AI
@@ -134,7 +134,7 @@ export default function Home() {
                 </svg>
               </motion.a>
               <motion.a
-                href={"mailto:colin.chambachan@gmail.com"}
+                href={"mailto:cchambachan@outlook.com"}
                 target="_blank"
                 aria-label="Email"
                 className="text-gray-700"

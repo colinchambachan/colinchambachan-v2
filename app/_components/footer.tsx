@@ -56,7 +56,7 @@ export default function Footer() {
             </svg>
           </motion.a>
           <motion.a
-            href={"mailto:colin.chambachan@gmail.com"}
+            href={"mailto:cchambachan@outlook.com"}
             target="_blank"
             aria-label="Email"
             className="hover:opacity-80 transition-all text-gray-700"
