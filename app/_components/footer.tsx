@@ -16,7 +16,7 @@ export default function Footer() {
           <p>Created & Designed by Colin Chambachan, 2024</p>
         </motion.aside>
         <motion.nav
-          className="flex justify-center gap-5"
+          className="flex justify-center gap-2"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}

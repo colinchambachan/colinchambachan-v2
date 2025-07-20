@@ -147,26 +147,26 @@ export default function More() {
                   <table className="w-full border-collapse border border-gray-300 dark:border-gray-600 text-sm md:text-base">
                     <thead>
                       <tr className="bg-gray-100 dark:bg-gray-800">
-                        <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left font-semibold">
+                        <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left font-semibold text-gray-900 dark:text-gray-100">
                           Status
                         </th>
-                        <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left font-semibold">
+                        <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left font-semibold text-gray-900 dark:text-gray-100">
                           Book Title
                         </th>
-                        <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left font-semibold">
+                        <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left font-semibold text-gray-900 dark:text-gray-100">
                           Author
                         </th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-black dark:text-white">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-black ">
                           Recently Read
                         </td>
-                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic text-black">
                           The Algebra of Happiness
                         </td>
-                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-black">
                           Scott Galloway
                         </td>
                       </tr>
@@ -182,7 +182,7 @@ export default function More() {
                         </td>
                       </tr>
                       <tr>
-                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-black dark:text-white">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-black">
                           Planned Read #1
                         </td>
                         <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic">
@@ -193,7 +193,7 @@ export default function More() {
                         </td>
                       </tr>
                       <tr>
-                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-black dark:text-white">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-black">
                           Planned Read #2
                         </td>
                         <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic">
