@@ -61,11 +61,11 @@ export default function About() {
                 I'm happy to speak more about any of my experiences, projects,
                 or interests. Feel free to reach out on Linkedin or at{" "}
                 <a
-                  href="mailto:colin.chambachan@gmail.com"
+                  href="mailto:cchambachan@outlook.com"
                   className="text-primary font-bold underline underline-offset-4"
                   target="_blank"
                 >
-                  colin.chambachan@gmail.com
+                  cchambachan@outlook.com
                 </a>
               </p>
             </div>
