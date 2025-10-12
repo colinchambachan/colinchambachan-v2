@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { RoughNotation } from "react-rough-notation";
 
 export default function Footer() {
   return (
