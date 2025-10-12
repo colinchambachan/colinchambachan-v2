@@ -1,6 +1,6 @@
 ## Colin's Portfolio
 
-[colinchambachan.me](https://www.colinchambachan.me)
+[colinchambachan.com](https://www.colinchambachan.com)
 
 ## Run Locally
 
