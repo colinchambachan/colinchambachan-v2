@@ -6,6 +6,10 @@ import Navbar from "./_components/navbar";
 import Footer from "./_components/footer";
 import { AOSInit } from "./_components/aos";
 import { Analytics } from "@vercel/analytics/react";
+import { Inter, Caveat } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const caveat = Caveat({ subsets: ["latin"], variable: "--font-caveat" });
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -49,9 +53,23 @@ export default function RootLayout({
       </head>
       <AOSInit />
       <body
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        className="font-Domine antialiased min-h-screen flex flex-col bg-gradient-to-b from-white to-gray-50"
+        className={`${inter.variable} ${caveat.variable} font-sans antialiased min-h-screen flex flex-col`}
+        style={{
+          background: "radial-gradient(#d0d0d0 1px, transparent 0.8px)",
+          backgroundSize: "22px 22px",
+          fontFamily: "var(--font-inter), system-ui, -apple-system, sans-serif",
+        }}
       >
+        {/* Optional paper texture */}
+        <div
+          style={{
+            pointerEvents: "none",
+            position: "fixed",
+            inset: 0,
+            background: "url(/textures/paper.png)",
+            opacity: 0.1,
+          }}
+        ></div>
         <Analytics />
         <Navbar />
         <main className="flex-grow flex items-center justify-center py-8 w-full">

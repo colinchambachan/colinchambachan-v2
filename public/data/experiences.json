@@ -3,15 +3,15 @@
     "org": "RBC Borealis",
     "role": "Software Engineering Intern",
     "link": "https://rbcborealis.com/",
-    "time": "Sep 2024 - Present",
+    "time": "Sep 2024 - Aug 2025",
     "desc": "Lumina Data Platform - On Data Engineering side, working on a data pipeline to analyze memory wastage on the cluster. On the Gen AI side, working on changes and features to a LLM-based migration service for legacy languages (COBOL, SAS, etc.)",
     "skills": ["Spark", "Hadoop", "Python", "Langchain", "LangGraph"]
   },
   {
     "org": "McMaster Interdisciplinary Satellite Team",
     "role": "Software Developer",
-    "link": "https://mcmasterneudose.ca/",
-    "time": "Sep 2023 - Present",
+    "link": "https://mstri.ca/",
+    "time": "Sep 2023 - Dec 2024",
     "desc": "Mission Operation & Controls Dashboard - used for satellite communication and job automation. A recent initiative developed was a script to automate the ground station antenna by predicting the satellite passover location. ",
     "skills": ["Python", "Apache Airflow", "Typescript", "Next.js"]
   },

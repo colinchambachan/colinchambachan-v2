@@ -1,32 +1,90 @@
 "use client";
 
+import { RoughNotation } from "react-rough-notation";
+import { useState, useEffect } from "react";
+
 export default function About() {
+  const [showAboutNotation, setShowAboutNotation] = useState(false);
+  const [showSkillsNotation, setShowSkillsNotation] = useState(false);
+
+  useEffect(() => {
+    // Cascade the underlines
+    setTimeout(() => setShowAboutNotation(true), 800);
+    setTimeout(() => setShowSkillsNotation(true), 1600);
+  }, []);
   return (
     <div className="flex flex-col w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
       <div className="text-sm md:text-base">
         <div className="flex flex-col">
           <div>
             <h1
-              className="text-2xl md:text-4xl mb-4 md:mb-6 text-primary font-bold"
-              data-aos="fade-left"
+              className="text-3xl md:text-5xl mb-6 md:mb-8 font-bold tracking-tight"
+              data-aos="fade-up"
+              data-aos-duration="600"
               id="title"
             >
-              &gt; About
+              <RoughNotation
+                type="underline"
+                show={showAboutNotation}
+                color="#2563eb"
+                strokeWidth={3}
+                animationDuration={800}
+              >
+                <span className="text-primary">&gt; About</span>
+              </RoughNotation>
             </h1>
             <div
               className="mb-8 md:mb-12 space-y-4 leading-relaxed"
-              data-aos="fade-left"
-              data-aos-delay="600"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="600"
             >
               <p>
-                Hey! I'm <span className="text-primary font-bold">Colin</span>,
-                a Software Engineering student from McMaster University!
+                Hey! I'm Colin, a{" "}
+                <RoughNotation
+                  type="highlight"
+                  show={showAboutNotation}
+                  color="#dbeafe"
+                  animationDuration={600}
+                  animationDelay={800}
+                  multiline={true}
+                  padding={2}
+                >
+                  <span className="text-primary font-bold">
+                    Software Engineering
+                  </span>
+                </RoughNotation>{" "}
+                student from{" "}
+                <RoughNotation
+                  type="highlight"
+                  show={showAboutNotation}
+                  color="#dbeafe"
+                  animationDuration={600}
+                  animationDelay={900}
+                  multiline={true}
+                  padding={2}
+                >
+                  <span className="text-primary font-bold">
+                    McMaster University
+                  </span>
+                </RoughNotation>
+                !
               </p>
               <p>
                 I'm particularly interested in{" "}
-                <span className="text-primary font-bold">
-                  Cloud, Data, and AI{" "}
-                </span>
+                <RoughNotation
+                  type="highlight"
+                  show={showAboutNotation}
+                  color="#dbeafe"
+                  animationDuration={600}
+                  animationDelay={1000}
+                  multiline={true}
+                  padding={2}
+                >
+                  <span className="text-primary font-bold">
+                    Cloud, Data, and AI{" "}
+                  </span>
+                </RoughNotation>
                 which I've explored through past internships, projects, and
                 other opportunities. In my experience, I've received a lot of
                 advice about being a "t-shaped" developer, so I'm also always
@@ -37,18 +95,54 @@ export default function About() {
                   I'm currently working at RBC Borealis, where I'm working on
                   two tools under the{" "}
                   <a
-                    className="text-primary font-bold underline underline-offset-4"
+                    className="text-primary font-bold underline underline-offset-4 inline-flex items-center gap-1"
                     href="https://rbcborealis.com/applications/lumina-platform/"
                     target="_blank"
                   >
-                    Lumina Data Platform{" "}
+                    Lumina Data Platform
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-3.5 w-3.5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
                   </a>
                   . I've been able to work on projects both in{" "}
-                  <span className="text-primary font-bold">
-                    Data Engineering{" "}
-                  </span>
+                  <RoughNotation
+                    type="highlight"
+                    show={showAboutNotation}
+                    color="#dbeafe"
+                    animationDuration={600}
+                    animationDelay={1200}
+                    multiline={true}
+                    padding={2}
+                  >
+                    <span className="text-primary font-bold">
+                      Data Engineering{" "}
+                    </span>
+                  </RoughNotation>
                   (creating a data pipeline to analyze cluster wastage) and{" "}
-                  <span className="text-primary font-bold">Generative AI </span>
+                  <RoughNotation
+                    type="highlight"
+                    show={showAboutNotation}
+                    color="#dbeafe"
+                    animationDuration={600}
+                    animationDelay={1400}
+                    multiline={true}
+                    padding={2}
+                  >
+                    <span className="text-primary font-bold">
+                      Generative AI{" "}
+                    </span>
+                  </RoughNotation>
                   (creating an LLM-based agent to migrate legacy code).
                 </p>
               </div>
@@ -61,28 +155,52 @@ export default function About() {
                 I'm happy to speak more about any of my experiences, projects,
                 or interests. Feel free to reach out on Linkedin or at{" "}
                 <a
-                  href="mailto:colin.chambachan@gmail.com"
-                  className="text-primary font-bold underline underline-offset-4"
+                  href="mailto:cchambachan@outlook.com"
+                  className="text-primary font-bold underline underline-offset-4 inline-flex items-center gap-1"
                   target="_blank"
                 >
-                  colin.chambachan@gmail.com
+                  cchambachan@outlook.com
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-3.5 w-3.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
                 </a>
               </p>
             </div>
             <h1
-              className="text-2xl md:text-4xl mb-4 md:mb-6 text-primary font-bold"
-              data-aos="fade-left"
-              data-aos-delay="1200"
+              className="text-3xl md:text-5xl mb-6 md:mb-8 font-bold tracking-tight"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="600"
               data-aos-anchor="#title"
             >
-              &gt; Skills
+              <RoughNotation
+                type="underline"
+                show={showSkillsNotation}
+                color="#2563eb"
+                strokeWidth={3}
+                animationDuration={800}
+              >
+                <span className="text-primary">&gt; Skills</span>
+              </RoughNotation>
             </h1>
 
             <div className="space-y-3 leading-relaxed">
               <div
                 className="mb-2"
-                data-aos="fade-left"
-                data-aos-delay="1800"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="600"
                 data-aos-anchor="#title"
               >
                 <span className="font-bold">Languages: </span> Python,
@@ -90,8 +208,9 @@ export default function About() {
               </div>
               <div
                 className="mb-2"
-                data-aos="fade-left"
-                data-aos-delay="1900"
+                data-aos="fade-up"
+                data-aos-delay="350"
+                data-aos-duration="600"
                 data-aos-anchor="#title"
               >
                 <span className="font-bold">Technologies: </span> Node.js,
@@ -100,8 +219,9 @@ export default function About() {
               </div>
               <div
                 className="mb-2"
-                data-aos="fade-left"
-                data-aos-delay="2000"
+                data-aos="fade-up"
+                data-aos-delay="400"
+                data-aos-duration="600"
                 data-aos-anchor="#title"
               >
                 <span className="font-bold">Tools: </span> AWS, Tableau, MySQL,

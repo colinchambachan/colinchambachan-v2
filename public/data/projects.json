@@ -1,9 +1,16 @@
 [
   {
+    "name": "🏆 Morph",
+    "link": "https://devpost.com/software/morph-jcot4m",
+    "time": null,
+    "desc": "Hack the North 2025 Best Use of MongoDB. AR CAD experience for Mechanical Engineers using the Snap Spectacle glasses.",
+    "skills": ["C#", "MongoDB", "Python"]
+  },
+  {
     "name": "PortfolioPulse",
     "link": "https://github.com/colinchambachan/PortfolioPulse",
     "time": null,
-    "desc": "Cloud automation workflow, which takes portfolio account statements, tracks your positions, and delivers daily insights and the latest related headlines to your inbox. 50+ users, 1k USD from Microsoft for Startups.",
+    "desc": "100+ users, 1k USD from Microsoft for Startups. Cloud automation workflow, which takes portfolio account statements, tracks your positions, and delivers daily insights and the latest related headlines to your inbox.",
     "skills": ["AWS", "Python"]
   },
   {
@@ -20,11 +27,11 @@
     ]
   },
   {
-    "name": "StatementStandardizer",
-    "link": "https://github.com/colinchambachan/Statements-Standardizer",
+    "name": "🏆 StudySpot",
+    "link": "https://github.com/ypatel2022/study-spot",
     "time": null,
-    "desc": "Aggregation script which takes transaction CSVs from multiple banks, splits transactions by income and expense, and consolidates them into one file. A real time-saver in my personal finances.",
-    "skills": ["Pandas", "Python"]
+    "desc": "Social media platform designed to track and promote the time students spend studying in the library. Sponsor winner at Deltahacks IX.",
+    "skills": ["Firebase", "Next.js", "Typescript", "Google Maps Dev Platform"]
   },
   {
     "name": "PraxAI",
@@ -34,26 +41,18 @@
     "skills": ["Django", "OpenAI Dev Platform"]
   },
   {
-    "name": "🏆 StudySpot",
-    "link": "https://github.com/ypatel2022/study-spot",
-    "time": null,
-    "desc": "Social media platform designed to track and promote the time students spend studying in the library. Sponsor winner at Deltahacks IX.",
-    "skills": ["Firebase", "Next.js", "Typescript", "Google Maps Dev Platform"]
-  },
-  {
     "name": "F1 Archive",
     "link": "https://f1archive.vercel.app/",
     "time": null,
     "desc": "Website to give all past F1 race insights, including finishing positions, track history, lap records, etc. 50+ users and featured on API's application gallery.",
     "skills": ["Next.js", "Javascript"]
   },
-
   {
-    "name": "WasteNoMore",
-    "link": "https://github.com/colinchambachan/WasteNoMore",
+    "name": "StatementStandardizer",
+    "link": "https://github.com/colinchambachan/Statements-Standardizer",
     "time": null,
-    "desc": "A python script developed to create a workflow for automatically recycling (or disposing of) containers, dependant on their suitability.",
-    "skills": ["Arduinos", "Raspberry Pi", "Python"]
+    "desc": "Aggregation script which takes transaction CSVs from multiple banks, splits transactions by income and expense, and consolidates them into one file. A real time-saver in my personal finances.",
+    "skills": ["Pandas", "Python"]
   },
   {
     "name": "🔗 Various Other Projects",
