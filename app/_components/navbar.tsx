@@ -77,11 +77,9 @@ export default function Navbar() {
           </Link>
         ))}
       </div>
-      <div className="md:hidden dropdown dropdown-bottom dropdown-end">
-        <motion.div
-          tabIndex={0}
-          role="button"
-          className="btn btn-ghost rounded-btn p-2"
+      <div className="md:hidden relative">
+        <motion.button
+          className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
           whileTap={{ scale: 0.9 }}
@@ -91,30 +89,26 @@ export default function Navbar() {
               isMenuOpen ? "bi-x text-2xl" : "bi-list text-2xl"
             }`}
           ></i>
-        </motion.div>
+        </motion.button>
         {isMenuOpen && (
-          <motion.ul
+          <motion.div
             initial={{ opacity: 0, y: -10, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.95 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
-            className="menu dropdown-content bg-white rounded-box z-[1] w-52 shadow-xl mt-2 border border-gray-200"
+            className="absolute right-0 top-full mt-2 w-52 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50"
           >
             {links.map((link) => (
-              <li
+              <Link
                 key={link.name}
-                className="border-b border-gray-100 last:border-none"
+                href={`/${link.link}`}
+                onClick={closeMenu}
+                className="block py-3 px-4 hover:bg-gray-50 hover:text-primary transition-colors font-medium border-b border-gray-100 last:border-none"
               >
-                <Link
-                  href={`/${link.link}`}
-                  onClick={closeMenu}
-                  className="py-3 px-4 hover:bg-gray-50 hover:text-primary transition-colors font-medium"
-                >
-                  {link.name}
-                </Link>
-              </li>
+                {link.name}
+              </Link>
             ))}
-          </motion.ul>
+          </motion.div>
         )}
       </div>
     </div>
