@@ -86,7 +86,7 @@ export default function Projects() {
         </h1>
 
         <div
-          className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 w-full"
+          className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 w-full min-h-[400px]"
           id="parent"
         >
           {projects?.map((project: Project, index: number) => {
