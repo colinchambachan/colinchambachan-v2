@@ -2,10 +2,11 @@ Colin Chambachan - a non-exhaustive insight
 
 Experience:
 Data + AI @ RBC Borealis
+Research @ University of Oxford
 Open Source @ Google
 Full Stack @ McMaster Satellite 
 Full Stack @ Workland
-VP @ GDG McMaster
+President @ GDG McMaster
 
 Skills:
 Langs - Python, Java, SQL, Javascript + others

@@ -42,18 +42,15 @@ export default function Navbar() {
   }, []);
 
   return (
-    <motion.div
-      className={`navbar z-50 bg-base-100 px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-64 py-2 md:py-4 sticky top-0 ${
+    <div
+      className={`navbar z-50 bg-base-100 px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-64 py-3 md:py-4 sticky top-0 ${
         scrolled ? "shadow-md backdrop-blur-sm bg-white/90" : "shadow-sm"
       } transition-all duration-300`}
-      initial={{ y: -20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5 }}
     >
       <div className="flex-grow">
         <Link href={"/"}>
           <motion.div
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.03 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             <Image
@@ -61,28 +58,23 @@ export default function Navbar() {
               width={120}
               height={120}
               alt="Colin Chambachan"
-              className="w-auto h-8 sm:h-10"
+              className="w-auto h-10 sm:h-12"
+              priority
             />
           </motion.div>
         </Link>
       </div>
-      <div className="hidden md:flex font-semibold gap-1 lg:gap-3">
-        {links.map((link, index) => (
-          <motion.div
-            key={link.name}
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 + 0.2 }}
-          >
-            <Link href={`/${link.link}`}>
-              <motion.button
-                className="px-2 lg:px-3 py-2 text-black transition-colors duration-300 ease-in-out hover:text-primary hover:bg-gray-50 rounded-md"
-                whileHover={{ y: -2 }}
-              >
-                {link.name}
-              </motion.button>
-            </Link>
-          </motion.div>
+      <div className="hidden md:flex font-medium gap-1 lg:gap-2">
+        {links.map((link) => (
+          <Link key={link.name} href={`/${link.link}`}>
+            <motion.button
+              className="px-3 lg:px-4 py-2 text-gray-700 transition-colors duration-200 hover:text-primary hover:bg-gray-50 rounded-lg"
+              whileHover={{ y: -2 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
+              {link.name}
+            </motion.button>
+          </Link>
         ))}
       </div>
       <div className="md:hidden dropdown dropdown-bottom dropdown-end">
@@ -127,6 +119,6 @@ export default function Navbar() {
           ))}
         </motion.ul>
       </div>
-    </motion.div>
+    </div>
   );
 }

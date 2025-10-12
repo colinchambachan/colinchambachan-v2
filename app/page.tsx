@@ -4,12 +4,26 @@ import hero from "/public/hero.jpg";
 import { useState, useEffect } from "react";
 import Modal from "./_components/modal";
 import { motion } from "framer-motion";
+import { RoughNotation } from "react-rough-notation";
 
 export default function Home() {
   type Paragraph = string[];
   const [quickContent, setQuickContent] = useState<string[][]>([]);
   const [firstTwoLines, setFirstTwoLines] = useState<string[]>([]);
   const [showModal, setShowModal] = useState<boolean>(false);
+  const [showNotation, setShowNotation] = useState<boolean>(false);
+
+  useEffect(() => {
+    // Delay RoughNotation until after Framer Motion animations complete AND layout is stable
+    const timer = setTimeout(() => {
+      // Force a reflow to ensure layout is settled
+      window.requestAnimationFrame(() => {
+        setShowNotation(true);
+      });
+    }, 800); // Increased delay for more stability
+
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     // fetch the text file
@@ -51,9 +65,9 @@ export default function Home() {
     <div className="w-full h-full px-4 sm:px-6 md:px-8">
       <div className="hero max-w-5xl mx-auto relative">
         {/* Background gradient effect */}
-        <div className="absolute -z-10 inset-0 bg-gradient-to-br from-blue-50 via-transparent to-purple-50 rounded-3xl opacity-60" />
+        <div className="absolute -z-10 inset-0 bg-gradient-to-br from-blue-100 via-transparent to-purple-100 rounded-2xl md:rounded-3xl opacity-60" />
 
-        <div className="flex flex-col items-center md:flex-row md:items-center md:justify-between py-8 sm:py-12 px-4 sm:px-6 md:px-12">
+        <div className="flex flex-col items-center md:flex-row md:items-center md:justify-between py-6 sm:py-10 md:py-12 px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -77,22 +91,43 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-blue-600 text-transparent bg-clip-text">
-              Hi! I'm Colin
-            </h1>
-            <h2 className="mt-2 mb-1 text-gray-600 font-medium">
-              <em>Currently: Data + AI @ RBC Borealis</em>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-primary to-blue-600 text-transparent bg-clip-text">
+                {showNotation ? (
+                  <RoughNotation
+                    type="underline"
+                    show={true}
+                    color="#2563eb"
+                    strokeWidth={2}
+                    animationDuration={800}
+                  >
+                    Hi! I'm Colin
+                  </RoughNotation>
+                ) : (
+                  <span>Hi! I'm Colin</span>
+                )}
+              </h1>
+            </motion.div>
+            <h2 className="mt-4 mb-1 text-base md:text-lg text-gray-600 font-normal">
+              Currently researching LLMs @ University of Oxford
             </h2>
-            <p className="mb-6 text-primary font-extrabold tracking-wide">
+            <h2 className="mb-6 text-base md:text-lg text-gray-500 font-normal">
+              Prev. Data + AI @ RBC Borealis
+            </h2>
+            <p className="mb-6 text-lg md:text-xl text-primary font-semibold">
               Passionate about Cloud, Data, and AI
             </p>
 
             <motion.button
-              className="rounded-md bg-primary text-white px-6 py-2.5 font-medium w-full sm:w-auto shadow-md hover:shadow-lg transition-all duration-300"
+              className="rounded-lg bg-primary text-white px-8 py-3 font-semibold text-base w-full sm:w-auto shadow-sm hover:shadow-md transition-all duration-200"
               onClick={() => {
                 setShowModal(true);
               }}
-              whileHover={{ scale: 1.03, backgroundColor: "#0052cc" }}
+              whileHover={{ scale: 1.02, backgroundColor: "#0052cc" }}
               whileTap={{ scale: 0.98 }}
             >
               View Cheatsheet
