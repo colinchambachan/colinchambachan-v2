@@ -74,10 +74,10 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="relative"
           >
-            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary to-blue-400 opacity-75 blur-md"></div>
+            <div className="absolute md:-inset-0.5 rounded-full bg-gradient-to-tr from-primary to-blue-400 opacity-75 blur-sm"></div>
             <Image
               src={hero}
-              className="w-36 h-36 sm:w-52 sm:h-52 md:w-64 md:h-64 xl:w-80 xl:h-80 rounded-full shadow-2xl mb-6 md:mb-0 object-cover relative z-10"
+              className="w-36 h-36 sm:w-52 sm:h-52 md:w-64 md:h-64 xl:w-80 xl:h-80 rounded-full shadow-md lg:shadow-2xl mb-6 md:mb-0 object-cover relative z-10"
               alt="Profile photo of Colin"
               width={400}
               height={400}
@@ -133,7 +133,7 @@ export default function Home() {
               View Cheatsheet
             </motion.button>
 
-            <div className="flex md:hidden justify-center gap-4 mt-8">
+            <div className="hidden  justify-center md:justify-start gap-2 mt-8">
               <motion.a
                 href={"https://www.linkedin.com/in/colinchambachan/"}
                 target="_blank"

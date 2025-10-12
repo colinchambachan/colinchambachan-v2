@@ -106,59 +106,18 @@ export default function More() {
               </p>
               <p>
                 As a result of this experience, I first got to attend{" "}
-                <RoughNotation
-                  type="highlight"
-                  show={showGDGNotation}
-                  color="#dbeafe"
-                  animationDuration={600}
-                  animationDelay={600}
-                  multiline={true}
-                  padding={2}
-                >
-                  <span className="text-primary font-bold">
-                    Google Cloud Next '23
-                  </span>
-                </RoughNotation>{" "}
+                <span className="text-primary font-bold">
+                  Google Cloud Next '23
+                </span>{" "}
                 in{" "}
-                <RoughNotation
-                  type="highlight"
-                  show={showGDGNotation}
-                  color="#dbeafe"
-                  animationDuration={600}
-                  animationDelay={700}
-                  multiline={true}
-                  padding={2}
-                >
-                  <span className="text-primary font-bold">
-                    San Francisco, California
-                  </span>
-                </RoughNotation>{" "}
+                <span className="text-primary font-bold">
+                  San Francisco, California
+                </span>{" "}
                 and{" "}
-                <RoughNotation
-                  type="highlight"
-                  show={showGDGNotation}
-                  color="#dbeafe"
-                  animationDuration={600}
-                  animationDelay={800}
-                  multiline={true}
-                  padding={2}
-                >
-                  <span className="text-primary font-bold">Google IO '25</span>
-                </RoughNotation>{" "}
-                in{" "}
-                <RoughNotation
-                  type="highlight"
-                  show={showGDGNotation}
-                  color="#dbeafe"
-                  animationDuration={600}
-                  animationDelay={900}
-                  multiline={true}
-                  padding={2}
-                >
-                  <span className="text-primary font-bold">
-                    Mountain View, California
-                  </span>
-                </RoughNotation>
+                <span className="text-primary font-bold">Google IO '25</span> in{" "}
+                <span className="text-primary font-bold">
+                  Mountain View, California
+                </span>
                 . It was extremely interesting to see the newest innovations in
                 Data Services with Gen AI, and how companies are able to deliver
                 them at scale by leveraging the cloud. We got the change to
@@ -172,20 +131,14 @@ export default function More() {
                   target="_blank"
                 >
                   here
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-3.5 w-3.5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
-                  </svg>
+                </a>{" "}
+                and more about Google IO '25{" "}
+                <a
+                  className="text-primary font-bold underline underline-offset-4"
+                  href="https://io.google/2025/"
+                  target="_blank"
+                >
+                  here
                 </a>
               </p>
             </div>
@@ -270,90 +223,77 @@ export default function More() {
               <p>
                 Reading is another interest of mine I try to keep up with. My
                 favourite book is{" "}
-                <RoughNotation
-                  type="highlight"
-                  show={showReadingNotation}
-                  color="#dbeafe"
-                  animationDuration={600}
-                  animationDelay={200}
-                  multiline={true}
-                  padding={2}
-                >
-                  <span className="italic font-bold text-primary">
-                    Ego is the Enemy
-                  </span>
-                </RoughNotation>{" "}
-                by <span className="font-medium">Ryan Holiday</span>. Especially
-                in this industry, where we're continually learning and adapting,
-                I think it's all the more important to have an open mindset.
-                Whether an experienced developer or a new intern, I believe
-                humility is extremely important to long-term growth and is
-                something I try to implement into my engineering & leadership
-                practices.
+                <span className="italic">Ego is the Enemy</span> by Ryan
+                Holiday. Especially in this industry, where we're continually
+                learning and adapting, I think it's all the more important to
+                have an open mindset. Whether an experienced developer or a new
+                intern, I believe humility is extremely important to long-term
+                growth and is something I try to implement into my engineering &
+                leadership practices.
               </p>
 
               {/* Reading Progress Table */}
               <div className="mt-6">
-                <h3 className="text-lg md:text-xl font-semibold text-primary mb-4">
+                <h3 className="text-lg md:text-xl font-semibold text-primary">
                   Current Reading List
                 </h3>
                 <div className="overflow-x-auto">
-                  <table className="w-full border-collapse border-2 border-gray-200 text-sm md:text-base bg-white shadow-md">
+                  <table className="w-full border-collapse border border-gray-300 dark:border-gray-600 text-sm md:text-base">
                     <thead>
-                      <tr className="bg-gray-50">
-                        <th className="border-2 border-gray-200 px-4 py-3 text-left font-semibold text-gray-900">
+                      <tr className="bg-gray-100 dark:bg-gray-800">
+                        <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left font-semibold text-gray-900 dark:text-gray-100">
                           Status
                         </th>
-                        <th className="border-2 border-gray-200 px-4 py-3 text-left font-semibold text-gray-900">
+                        <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left font-semibold text-gray-900 dark:text-gray-100">
                           Book Title
                         </th>
-                        <th className="border-2 border-gray-200 px-4 py-3 text-left font-semibold text-gray-900">
+                        <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left font-semibold text-gray-900 dark:text-gray-100">
                           Author
                         </th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr className="hover:bg-gray-50 transition-colors">
-                        <td className="border-2 border-gray-200 px-4 py-3 font-medium text-gray-700">
+                      <tr>
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-black ">
                           Recently Read
                         </td>
-                        <td className="border-2 border-gray-200 px-4 py-3 italic">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic text-black">
                           The Algebra of Happiness
                         </td>
-                        <td className="border-2 border-gray-200 px-4 py-3">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-black">
                           Scott Galloway
                         </td>
                       </tr>
-                      <tr className="hover:bg-blue-50 transition-colors bg-blue-50/30">
-                        <td className="border-2 border-gray-200 px-4 py-3 font-semibold text-primary">
+                      <tr>
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-blue-600 dark:text-blue-400">
                           Current Read
                         </td>
-                        <td className="border-2 border-gray-200 px-4 py-3 italic font-medium">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic">
                           Thinking, Fast and Slow
                         </td>
-                        <td className="border-2 border-gray-200 px-4 py-3 font-medium">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
                           Daniel Kahneman
                         </td>
                       </tr>
-                      <tr className="hover:bg-gray-50 transition-colors">
-                        <td className="border-2 border-gray-200 px-4 py-3 font-medium text-gray-700">
+                      <tr>
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-black">
                           Planned Read #1
                         </td>
-                        <td className="border-2 border-gray-200 px-4 py-3 italic">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic">
                           The Creative Act: A Way of Being
                         </td>
-                        <td className="border-2 border-gray-200 px-4 py-3">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
                           Rick Rubin
                         </td>
                       </tr>
-                      <tr className="hover:bg-gray-50 transition-colors">
-                        <td className="border-2 border-gray-200 px-4 py-3 font-medium text-gray-700">
+                      <tr>
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-black">
                           Planned Read #2
                         </td>
-                        <td className="border-2 border-gray-200 px-4 py-3 italic">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic">
                           The Personal MBA
                         </td>
-                        <td className="border-2 border-gray-200 px-4 py-3">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
                           Josh Kaufman
                         </td>
                       </tr>
