@@ -7,7 +7,6 @@ export const AOSInit = () => {
     // Dynamically import AOS to ensure it runs client-side
     const initAOS = async () => {
       const AOS = await import("aos");
-      await import("aos/dist/aos.css");
 
       AOS.init({
         easing: "ease-out-cubic",
