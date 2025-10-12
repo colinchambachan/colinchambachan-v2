@@ -87,37 +87,35 @@ export default function Navbar() {
           whileTap={{ scale: 0.9 }}
         >
           <i
-            className={`bi ${isMenuOpen ? "bi-x text-lg" : "bi-list text-xl"}`}
+            className={`bi ${
+              isMenuOpen ? "bi-x text-2xl" : "bi-list text-2xl"
+            }`}
           ></i>
         </motion.div>
-        <motion.ul
-          tabIndex={0}
-          animate={{
-            height: isMenuOpen ? "auto" : 0,
-            opacity: isMenuOpen ? 1 : 0,
-            display: isMenuOpen ? "block" : "none",
-          }}
-          transition={{ duration: 0.3 }}
-          className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 shadow-lg mt-2 overflow-hidden border border-gray-100"
-        >
-          {links.map((link, index) => (
-            <motion.li
-              key={link.name}
-              className="border-b border-gray-100 last:border-none"
-              initial={{ opacity: 0, x: 10 }}
-              animate={{ opacity: isMenuOpen ? 1 : 0, x: isMenuOpen ? 0 : 10 }}
-              transition={{ delay: index * 0.1 }}
-            >
-              <Link
-                href={`/${link.link}`}
-                onClick={closeMenu}
-                className="py-3 px-4 hover:bg-gray-50 hover:text-primary transition-colors"
+        {isMenuOpen && (
+          <motion.ul
+            initial={{ opacity: 0, y: -10, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -10, scale: 0.95 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+            className="menu dropdown-content bg-white rounded-box z-[1] w-52 shadow-xl mt-2 border border-gray-200"
+          >
+            {links.map((link) => (
+              <li
+                key={link.name}
+                className="border-b border-gray-100 last:border-none"
               >
-                {link.name}
-              </Link>
-            </motion.li>
-          ))}
-        </motion.ul>
+                <Link
+                  href={`/${link.link}`}
+                  onClick={closeMenu}
+                  className="py-3 px-4 hover:bg-gray-50 hover:text-primary transition-colors font-medium"
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </motion.ul>
+        )}
       </div>
     </div>
   );

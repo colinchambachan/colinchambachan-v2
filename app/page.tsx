@@ -133,7 +133,7 @@ export default function Home() {
               View Cheatsheet
             </motion.button>
 
-            <div className="hidden  justify-center md:justify-start gap-2 mt-8">
+            <div className="flex md:hidden justify-center gap-4 mt-8">
               <motion.a
                 href={"https://www.linkedin.com/in/colinchambachan/"}
                 target="_blank"
