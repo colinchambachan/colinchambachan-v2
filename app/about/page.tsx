@@ -14,7 +14,7 @@ export default function About() {
   }, []);
   return (
     <div className="flex flex-col w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
-      <div className="text-sm md:text-base">
+      <div className="text-sm md:text-base text-gray-900 dark:text-gray-100">
         <div className="flex flex-col">
           <div>
             <h1
@@ -30,7 +30,9 @@ export default function About() {
                 strokeWidth={3}
                 animationDuration={800}
               >
-                <span className="text-primary">&gt; About</span>
+                <span className="text-primary dark:text-blue-400">
+                  &gt; About
+                </span>
               </RoughNotation>
             </h1>
             <div
@@ -50,7 +52,7 @@ export default function About() {
                   multiline={true}
                   padding={2}
                 >
-                  <span className="text-primary font-bold">
+                  <span className="text-primary dark:text-blue-600 font-bold">
                     Software Engineering
                   </span>
                 </RoughNotation>{" "}
@@ -64,7 +66,7 @@ export default function About() {
                   multiline={true}
                   padding={2}
                 >
-                  <span className="text-primary font-bold">
+                  <span className="text-primary dark:text-blue-600 font-bold">
                     McMaster University
                   </span>
                 </RoughNotation>
@@ -81,7 +83,7 @@ export default function About() {
                   multiline={true}
                   padding={2}
                 >
-                  <span className="text-primary font-bold">
+                  <span className="text-primary dark:text-blue-600 font-bold">
                     Cloud, Data, and AI{" "}
                   </span>
                 </RoughNotation>
@@ -95,7 +97,7 @@ export default function About() {
                   I'm currently working at RBC Borealis, where I'm working on
                   two tools under the{" "}
                   <a
-                    className="text-primary font-bold underline underline-offset-4 inline-flex items-center gap-1"
+                    className="text-primary dark:text-blue-400 font-bold underline underline-offset-4 inline-flex items-center gap-1"
                     href="https://rbcborealis.com/applications/lumina-platform/"
                     target="_blank"
                   >
@@ -125,7 +127,7 @@ export default function About() {
                     multiline={true}
                     padding={2}
                   >
-                    <span className="text-primary font-bold">
+                    <span className="text-primary dark:text-blue-600 font-bold">
                       Data Engineering{" "}
                     </span>
                   </RoughNotation>
@@ -139,7 +141,7 @@ export default function About() {
                     multiline={true}
                     padding={2}
                   >
-                    <span className="text-primary font-bold">
+                    <span className="text-primary dark:text-blue-600 font-bold">
                       Generative AI{" "}
                     </span>
                   </RoughNotation>
@@ -156,7 +158,7 @@ export default function About() {
                 or interests. Feel free to reach out on Linkedin or at{" "}
                 <a
                   href="mailto:cchambachan@outlook.com"
-                  className="text-primary font-bold underline underline-offset-4"
+                  className="text-primary dark:text-blue-400 font-bold underline underline-offset-4"
                   target="_blank"
                 >
                   cchambachan@outlook.com
@@ -177,7 +179,9 @@ export default function About() {
                 strokeWidth={3}
                 animationDuration={800}
               >
-                <span className="text-primary">&gt; Skills</span>
+                <span className="text-primary dark:text-blue-400">
+                  &gt; Skills
+                </span>
               </RoughNotation>
             </h1>
 

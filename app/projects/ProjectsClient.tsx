@@ -60,7 +60,7 @@ export default function ProjectsClient({ projects }: ProjectsClientProps) {
             strokeWidth={3}
             animationDuration={800}
           >
-            <span className="text-primary">&gt; Projects</span>
+            <span className="text-primary dark:text-blue-400">&gt; Projects</span>
           </RoughNotation>
         </h1>
 
@@ -73,7 +73,7 @@ export default function ProjectsClient({ projects }: ProjectsClientProps) {
             return (
               <div
                 key={project.name}
-                className={`card bg-white border-2 border-gray-200 h-full w-full shadow-lg hover:shadow-2xl hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 ${
+                className={`card bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 h-full w-full shadow-lg hover:shadow-2xl hover:border-primary/50 dark:hover:border-blue-500/50 hover:-translate-y-1 transition-all duration-300 ${
                   project.link ? "cursor-pointer" : ""
                 }`}
                 data-aos="fade-up"
@@ -90,7 +90,7 @@ export default function ProjectsClient({ projects }: ProjectsClientProps) {
                   <div
                     className={`card-body h-full p-5 sm:p-6 ${
                       project.link
-                        ? "text-black transition-colors duration-300 ease-in-out hover:text-primary"
+                        ? "text-gray-900 dark:text-gray-100 transition-colors duration-300 ease-in-out hover:text-primary dark:hover:text-blue-400"
                         : ""
                     }`}
                   >
@@ -100,7 +100,7 @@ export default function ProjectsClient({ projects }: ProjectsClientProps) {
                           {project.name}
                         </h2>
                         {project.time && (
-                          <div className="text-gray-600 text-sm">
+                          <div className="text-gray-600 dark:text-gray-400 text-sm">
                             {project.time}
                           </div>
                         )}
@@ -114,7 +114,7 @@ export default function ProjectsClient({ projects }: ProjectsClientProps) {
                         return (
                           <span
                             key={skill}
-                            className="px-2.5 py-1 text-xs font-medium bg-blue-50 text-primary rounded-md border border-blue-100"
+                            className="px-2.5 py-1 text-xs font-medium bg-blue-50 dark:bg-blue-900/30 text-primary dark:text-blue-400 rounded-md border border-blue-100 dark:border-blue-800"
                           >
                             {skill}
                           </span>

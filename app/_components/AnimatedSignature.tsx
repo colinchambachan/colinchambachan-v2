@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 interface AnimatedSignatureProps {
   className?: string;
@@ -10,21 +10,42 @@ export default function AnimatedSignature({
   className = "",
 }: AnimatedSignatureProps) {
   const [mounted, setMounted] = useState(false);
+  const svgRef = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
-    setMounted(true);
+    // Calculate path lengths and store as CSS variables
+    if (svgRef.current) {
+      const paths = svgRef.current.querySelectorAll("path");
+      paths.forEach((path) => {
+        const length = path.getTotalLength();
+        (path as SVGPathElement).style.setProperty(
+          "--path-length",
+          `${length}`
+        );
+      });
+    }
+
+    // Trigger animation after setting lengths
+    setTimeout(() => setMounted(true), 50);
   }, []);
+
+  // Sort paths left-to-right by their X position
+  const sortedPaths = [...pathsData].sort((a, b) => {
+    const xA = parseInt(a.transform.match(/translate\(([^,]+)/)?.[1] || "0");
+    const xB = parseInt(b.transform.match(/translate\(([^,]+)/)?.[1] || "0");
+    return xA - xB;
+  });
 
   return (
     <svg
+      ref={svgRef}
       viewBox="0 0 864 256"
       className={`w-36 sm:w-40 md:w-44 lg:w-48 xl:w-52 h-auto text-gray-900 transition-all duration-300 hover:scale-105 ${className} ${
-        mounted ? "animate-signature opacity-0 animate-fade-in" : "opacity-0"
+        mounted ? "animate-signature" : ""
       }`}
       xmlns="http://www.w3.org/2000/svg"
-      style={{ animationDelay: "0.2s" }}
     >
-      {pathsData.map((pathData, i) => (
+      {sortedPaths.map((pathData, i) => (
         <path
           key={i}
           d={pathData.d}

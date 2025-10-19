@@ -63,7 +63,7 @@ export default function ExperienceClient({
             strokeWidth={3}
             animationDuration={800}
           >
-            <span className="text-primary">&gt; Experience</span>
+            <span className="text-primary dark:text-blue-400">&gt; Experience</span>
           </RoughNotation>
         </h1>
 
@@ -76,7 +76,7 @@ export default function ExperienceClient({
             return (
               <div
                 key={experience.org + experience.role}
-                className="card bg-white border-2 border-gray-200 h-full w-full shadow-lg hover:shadow-2xl hover:border-primary/50 hover:-translate-y-1 transition-all duration-300"
+                className="card bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 h-full w-full shadow-lg hover:shadow-2xl hover:border-primary/50 dark:hover:border-blue-500/50 hover:-translate-y-1 transition-all duration-300"
                 data-aos="fade-up"
                 data-aos-delay={`${cardDelay}`}
                 data-aos-duration="600"
@@ -88,14 +88,14 @@ export default function ExperienceClient({
                   className="h-full"
                   aria-label={`Read more about ${experience.org} - ${experience.role}`}
                 >
-                  <div className="card-body h-full p-5 sm:p-6 text-black transition-colors duration-300 ease-in-out hover:text-primary">
+                  <div className="card-body h-full p-5 sm:p-6 text-gray-900 dark:text-gray-100 transition-colors duration-300 ease-in-out hover:text-primary dark:hover:text-blue-400">
                     <div className="space-y-2">
                       <h2 className="text-lg md:text-xl font-bold card-title line-clamp-2">
                         {experience.org}
                       </h2>
                       <div className="flex flex-col sm:flex-row sm:justify-between gap-1 text-sm">
                         <div className="font-medium">{experience.role}</div>
-                        <div className="text-gray-600">{experience.time}</div>
+                        <div className="text-gray-600 dark:text-gray-400">{experience.time}</div>
                       </div>
                       <div className="py-2 text-sm sm:text-base">
                         {experience.desc}
@@ -106,7 +106,7 @@ export default function ExperienceClient({
                         return (
                           <span
                             key={skill}
-                            className="px-2.5 py-1 text-xs font-medium bg-blue-50 text-primary rounded-md border border-blue-100"
+                            className="px-2.5 py-1 text-xs font-medium bg-blue-50 dark:bg-blue-900/30 text-primary dark:text-blue-400 rounded-md border border-blue-100 dark:border-blue-800"
                           >
                             {skill}
                           </span>

@@ -16,7 +16,7 @@ export default function More() {
   }, []);
   return (
     <div className="flex flex-col w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
-      <div className="w-full text-sm md:text-base">
+      <div className="w-full text-sm md:text-base text-gray-900 dark:text-gray-100">
         <div className="flex flex-col">
           <div>
             <h1
@@ -32,7 +32,7 @@ export default function More() {
                 strokeWidth={3}
                 animationDuration={800}
               >
-                <span className="text-primary">
+                <span className="text-primary dark:text-blue-400">
                   &gt; Google Developer Groups
                 </span>
               </RoughNotation>
@@ -55,7 +55,7 @@ export default function More() {
                   multiline={true}
                   padding={2}
                 >
-                  <span className="text-primary font-bold">
+                  <span className="text-primary dark:text-blue-600 font-bold">
                     President @ GDG McMaster.
                   </span>
                 </RoughNotation>{" "}
@@ -79,11 +79,13 @@ export default function More() {
                   multiline={true}
                   padding={2}
                 >
-                  <span className="text-primary font-bold">200+</span>
+                  <span className="text-primary dark:text-blue-600 font-bold">
+                    200+
+                  </span>
                 </RoughNotation>{" "}
                 attendees. You can find out more about us{" "}
                 <a
-                  className="text-primary font-bold underline underline-offset-4 inline-flex items-center gap-1"
+                  className="text-primary dark:text-blue-400 font-bold underline underline-offset-4 inline-flex items-center gap-1"
                   href="https://gdg.community.dev/gdg-on-campus-mcmaster-university-hamilton-canada/"
                   target="_blank"
                 >
@@ -106,16 +108,19 @@ export default function More() {
               </p>
               <p>
                 As a result of this experience, I first got to attend{" "}
-                <span className="text-primary font-bold">
+                <span className="text-primary dark:text-blue-400 font-bold">
                   Google Cloud Next '23
                 </span>{" "}
                 in{" "}
-                <span className="text-primary font-bold">
+                <span className="text-primary dark:text-blue-400 font-bold">
                   San Francisco, California
                 </span>{" "}
                 and{" "}
-                <span className="text-primary font-bold">Google IO '25</span> in{" "}
-                <span className="text-primary font-bold">
+                <span className="text-primary dark:text-blue-400 font-bold">
+                  Google IO '25
+                </span>{" "}
+                in{" "}
+                <span className="text-primary dark:text-blue-400 font-bold">
                   Mountain View, California
                 </span>
                 . It was extremely interesting to see the newest innovations in
@@ -126,7 +131,7 @@ export default function More() {
                 big part in kick-starting my passion for Cloud, Data, and AI.
                 You can read more about Google Cloud Next '23{" "}
                 <a
-                  className="text-primary font-bold underline underline-offset-4 inline-flex items-center gap-1"
+                  className="text-primary dark:text-blue-400 font-bold underline underline-offset-4 inline-flex items-center gap-1"
                   href="https://cloud.google.com/blog/topics/google-cloud-next/welcome-to-google-cloud-next-23"
                   target="_blank"
                 >
@@ -134,7 +139,7 @@ export default function More() {
                 </a>{" "}
                 and more about Google IO '25{" "}
                 <a
-                  className="text-primary font-bold underline underline-offset-4"
+                  className="text-primary dark:text-blue-400 font-bold underline underline-offset-4"
                   href="https://io.google/2025/"
                   target="_blank"
                 >
@@ -156,7 +161,9 @@ export default function More() {
                 strokeWidth={3}
                 animationDuration={800}
               >
-                <span className="text-primary">&gt; Guitar & Music</span>
+                <span className="text-primary dark:text-blue-400">
+                  &gt; Guitar & Music
+                </span>
               </RoughNotation>
             </h1>
 
@@ -173,7 +180,7 @@ export default function More() {
                 Starting as a Covid project, some of my friends and I have been
                 putting together covers of songs, which can be found{" "}
                 <a
-                  className="text-primary font-bold underline underline-offset-4 inline-flex items-center gap-1"
+                  className="text-primary dark:text-blue-400 font-bold underline underline-offset-4 inline-flex items-center gap-1"
                   href="https://www.instagram.com/monkey.hut/"
                   target="_blank"
                 >
@@ -209,7 +216,9 @@ export default function More() {
                 strokeWidth={3}
                 animationDuration={800}
               >
-                <span className="text-primary">&gt; Reading</span>
+                <span className="text-primary dark:text-blue-400">
+                  &gt; Reading
+                </span>
               </RoughNotation>
             </h1>
 
@@ -234,7 +243,7 @@ export default function More() {
 
               {/* Reading Progress Table */}
               <div className="mt-6">
-                <h3 className="text-lg md:text-xl font-semibold text-primary">
+                <h3 className="text-lg md:text-xl font-semibold text-primary dark:text-blue-400">
                   Current Reading List
                 </h3>
                 <div className="overflow-x-auto">
@@ -254,13 +263,13 @@ export default function More() {
                     </thead>
                     <tbody>
                       <tr>
-                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-black ">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-gray-700 dark:text-gray-300">
                           Recently Read
                         </td>
-                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic text-black">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic text-gray-700 dark:text-gray-300">
                           The Algebra of Happiness
                         </td>
-                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-black">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-gray-700 dark:text-gray-300">
                           Scott Galloway
                         </td>
                       </tr>
@@ -268,32 +277,32 @@ export default function More() {
                         <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-blue-600 dark:text-blue-400">
                           Current Read
                         </td>
-                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic text-gray-700 dark:text-gray-300">
                           Thinking, Fast and Slow
                         </td>
-                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-gray-700 dark:text-gray-300">
                           Daniel Kahneman
                         </td>
                       </tr>
                       <tr>
-                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-black">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-gray-700 dark:text-gray-300">
                           Planned Read #1
                         </td>
-                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic text-gray-700 dark:text-gray-300">
                           The Creative Act: A Way of Being
                         </td>
-                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-gray-700 dark:text-gray-300">
                           Rick Rubin
                         </td>
                       </tr>
                       <tr>
-                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-black">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-gray-700 dark:text-gray-300">
                           Planned Read #2
                         </td>
-                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 italic text-gray-700 dark:text-gray-300">
                           The Personal MBA
                         </td>
-                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">
+                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-gray-700 dark:text-gray-300">
                           Josh Kaufman
                         </td>
                       </tr>

@@ -65,7 +65,7 @@ export default function Home() {
     <div className="w-full h-full px-4 sm:px-6 md:px-8">
       <div className="hero max-w-5xl mx-auto relative">
         {/* Background gradient effect */}
-        <div className="absolute -z-10 inset-0 bg-gradient-to-br from-blue-100 via-transparent to-purple-100 rounded-2xl md:rounded-3xl opacity-60" />
+        <div className="absolute -z-10 inset-0 bg-gradient-to-br from-blue-100 via-transparent to-purple-100 dark:from-blue-900/30 dark:via-transparent dark:to-purple-900/30 rounded-2xl md:rounded-3xl opacity-60 dark:opacity-40" />
 
         <div className="flex flex-col items-center md:flex-row md:items-center md:justify-between py-6 sm:py-10 md:py-12 px-4 sm:px-6 md:px-12">
           <motion.div
@@ -74,10 +74,10 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="relative"
           >
-            <div className="absolute md:-inset-0.5 rounded-full bg-gradient-to-tr from-primary to-blue-400 opacity-75 blur-sm"></div>
+            <div className="absolute md:-inset-0.5 rounded-full bg-gradient-to-tr from-primary to-blue-400 dark:from-blue-500 dark:to-purple-500 opacity-75 dark:opacity-60 blur-sm"></div>
             <Image
               src={hero}
-              className="w-36 h-36 sm:w-52 sm:h-52 md:w-64 md:h-64 xl:w-80 xl:h-80 rounded-full shadow-md lg:shadow-2xl mb-6 md:mb-0 object-cover relative z-10"
+              className="w-36 h-36 sm:w-52 sm:h-52 md:w-64 md:h-64 xl:w-80 xl:h-80 rounded-full shadow-md lg:shadow-2xl mb-6 md:mb-0 object-cover relative z-10 ring-2 ring-white dark:ring-gray-800"
               alt="Profile photo of Colin"
               width={400}
               height={400}
@@ -96,7 +96,7 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-primary to-blue-600 text-transparent bg-clip-text">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-primary to-blue-600 dark:from-blue-400 dark:to-purple-400 text-transparent bg-clip-text">
                 {showNotation ? (
                   <RoughNotation
                     type="underline"
@@ -112,22 +112,22 @@ export default function Home() {
                 )}
               </h1>
             </motion.div>
-            <h2 className="mt-4 mb-1 text-base md:text-lg text-gray-600 font-normal">
+            <h2 className="mt-4 mb-1 text-base md:text-lg text-gray-600 dark:text-gray-300 font-normal">
               Currently researching LLMs @ University of Oxford
             </h2>
-            <h2 className="mb-6 text-base md:text-lg text-gray-500 font-normal">
+            <h2 className="mb-6 text-base md:text-lg text-gray-500 dark:text-gray-400 font-normal">
               Prev. Data + AI @ RBC Borealis
             </h2>
-            <p className="mb-6 text-lg md:text-xl text-primary font-semibold">
+            <p className="mb-6 text-lg md:text-xl text-primary dark:text-blue-400 font-semibold">
               Passionate about Cloud, Data, and AI
             </p>
 
             <motion.button
-              className="rounded-lg bg-primary text-white px-8 py-3 font-semibold text-base w-full sm:w-auto shadow-sm hover:shadow-md transition-all duration-200"
+              className="rounded-lg bg-primary dark:bg-blue-600 text-white px-8 py-3 font-semibold text-base w-full sm:w-auto shadow-sm hover:shadow-md transition-all duration-200 hover:bg-primary-focus dark:hover:bg-blue-700"
               onClick={() => {
                 setShowModal(true);
               }}
-              whileHover={{ scale: 1.02, backgroundColor: "#0052cc" }}
+              whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
               View Cheatsheet
@@ -138,7 +138,7 @@ export default function Home() {
                 href={"https://www.linkedin.com/in/colinchambachan/"}
                 target="_blank"
                 aria-label="LinkedIn Profile"
-                className="text-gray-700"
+                className="text-gray-700 dark:text-gray-300"
                 whileHover={{ y: -3, color: "#0A66C2" }}
               >
                 <svg
@@ -155,7 +155,7 @@ export default function Home() {
                 href={"https://github.com/colinchambachan"}
                 target="_blank"
                 aria-label="GitHub Profile"
-                className="text-gray-700"
+                className="text-gray-700 dark:text-gray-300"
                 whileHover={{ y: -3, color: "#24292F" }}
               >
                 <svg
@@ -172,7 +172,7 @@ export default function Home() {
                 href={"mailto:cchambachan@outlook.com"}
                 target="_blank"
                 aria-label="Email"
-                className="text-gray-700"
+                className="text-gray-700 dark:text-gray-300"
                 whileHover={{ y: -3, color: "#EA4335" }}
               >
                 <svg

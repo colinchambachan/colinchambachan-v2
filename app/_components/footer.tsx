@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 export default function Footer() {
   return (
     <div className="w-full mt-1 pb-4 px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-64">
-      <div className="flex-grow border-t mt-3 mb-4 border-gray-200"></div>
+      <div className="flex-grow border-t mt-3 mb-4 border-gray-200 dark:border-gray-700"></div>
       <footer className="footer flex flex-col sm:flex-row justify-between gap-4 items-center mt-auto">
         <motion.aside
-          className="text-center sm:text-left text-sm sm:text-base text-gray-600"
+          className="text-center sm:text-left text-sm sm:text-base text-gray-600 dark:text-gray-400"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -25,7 +25,7 @@ export default function Footer() {
             href={"https://www.linkedin.com/in/colinchambachan/"}
             target="_blank"
             aria-label="LinkedIn Profile"
-            className="hover:opacity-80 transition-all text-gray-700"
+            className="hover:opacity-80 transition-all text-gray-700 dark:text-gray-300"
             whileHover={{ y: -3, color: "#0A66C2" }}
           >
             <svg
@@ -42,7 +42,7 @@ export default function Footer() {
             href={"https://github.com/colinchambachan"}
             target="_blank"
             aria-label="GitHub Profile"
-            className="hover:opacity-80 transition-all text-gray-700"
+            className="hover:opacity-80 transition-all text-gray-700 dark:text-gray-300"
             whileHover={{ y: -3, color: "#24292F" }}
           >
             <svg
@@ -59,7 +59,7 @@ export default function Footer() {
             href={"mailto:cchambachan@outlook.com"}
             target="_blank"
             aria-label="Email"
-            className="hover:opacity-80 transition-all text-gray-700"
+            className="hover:opacity-80 transition-all text-gray-700 dark:text-gray-300"
             whileHover={{ y: -3, color: "#EA4335" }}
           >
             <svg
