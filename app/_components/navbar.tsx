@@ -1,9 +1,8 @@
 "use client";
-import Image from "next/image";
-import logo from "/public/logosCropped.jpg";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import AnimatedSignature from "./AnimatedSignature";
 
 interface LinkElement {
   name: string;
@@ -43,25 +42,13 @@ export default function Navbar() {
 
   return (
     <div
-      className={`navbar z-50 bg-base-100 px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-64 py-3 md:py-4 sticky top-0 ${
+      className={`navbar z-50 bg-base-100 px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-64 py-2 md:py-2.5 sticky top-0 ${
         scrolled ? "shadow-md backdrop-blur-sm bg-white/90" : "shadow-sm"
       } transition-all duration-300`}
     >
       <div className="flex-grow">
-        <Link href={"/"}>
-          <motion.div
-            whileHover={{ scale: 1.03 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          >
-            <Image
-              src={logo}
-              width={120}
-              height={120}
-              alt="Colin Chambachan"
-              className="w-auto h-10 sm:h-12"
-              priority
-            />
-          </motion.div>
+        <Link href={"/"} className="inline-block">
+          <AnimatedSignature />
         </Link>
       </div>
       <div className="hidden md:flex font-medium gap-1 lg:gap-2">

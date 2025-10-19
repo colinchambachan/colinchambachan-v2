@@ -105,7 +105,7 @@ html {
 
 /* Animation utilities */
 .animate-fade-in {
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.6s ease-out forwards;
 }
 
 .animate-slide-up {
@@ -115,9 +115,11 @@ html {
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translateY(-5px);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -130,6 +132,37 @@ html {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+/* Signature Animation */
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1000;
+    fill-opacity: 0;
+  }
+  60% {
+    fill-opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+    fill-opacity: 1;
+  }
+}
+
+.signature-path {
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  fill: currentColor;
+  fill-opacity: 0;
+}
+
+.animate-signature .signature-path {
+  animation: draw 2s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+  animation-delay: calc(var(--path-index, 0) * 0.1s);
 }
 
 /* Improve modal appearance on mobile */
