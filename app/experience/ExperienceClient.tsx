@@ -63,7 +63,9 @@ export default function ExperienceClient({
             strokeWidth={3}
             animationDuration={800}
           >
-            <span className="text-primary dark:text-blue-400">&gt; Experience</span>
+            <span className="text-primary dark:text-blue-400">
+              &gt; Experience
+            </span>
           </RoughNotation>
         </h1>
 
@@ -76,7 +78,7 @@ export default function ExperienceClient({
             return (
               <div
                 key={experience.org + experience.role}
-                className="card bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 h-full w-full shadow-lg hover:shadow-2xl hover:border-primary/50 dark:hover:border-blue-500/50 hover:-translate-y-1 transition-all duration-300"
+                className="card bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 h-full w-full shadow-lg hover:shadow-2xl hover:border-primary/50 dark:hover:border-blue-500/50 hover:-translate-y-1 transition-all duration-300 ease-in-out"
                 data-aos="fade-up"
                 data-aos-delay={`${cardDelay}`}
                 data-aos-duration="600"
@@ -95,7 +97,9 @@ export default function ExperienceClient({
                       </h2>
                       <div className="flex flex-col sm:flex-row sm:justify-between gap-1 text-sm">
                         <div className="font-medium">{experience.role}</div>
-                        <div className="text-gray-600 dark:text-gray-400">{experience.time}</div>
+                        <div className="text-gray-600 dark:text-gray-400">
+                          {experience.time}
+                        </div>
                       </div>
                       <div className="py-2 text-sm sm:text-base">
                         {experience.desc}
