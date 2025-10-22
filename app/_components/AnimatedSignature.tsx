@@ -40,7 +40,7 @@ export default function AnimatedSignature({
     <svg
       ref={svgRef}
       viewBox="0 0 864 256"
-      className={`w-36 sm:w-40 md:w-44 lg:w-48 xl:w-52 h-auto text-gray-900 transition-all duration-300 hover:scale-105 ${className} ${
+      className={`w-36 sm:w-40 md:w-44 lg:w-48 xl:w-52 h-auto text-gray-900 dark:text-gray-100 transition-all duration-300 hover:scale-105 ${className} ${
         mounted ? "animate-signature" : ""
       }`}
       xmlns="http://www.w3.org/2000/svg"
