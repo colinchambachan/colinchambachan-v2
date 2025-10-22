@@ -8,12 +8,16 @@ export default function Footer() {
       <div className="flex-grow border-t mt-3 mb-4 border-gray-200 dark:border-gray-700"></div>
       <footer className="footer flex flex-col sm:flex-row justify-between gap-4 items-center mt-auto">
         <motion.aside
-          className="text-center sm:text-left text-sm sm:text-base text-gray-600 dark:text-gray-400"
+          className="text-center sm:text-left text-sm sm:text-base text-gray-600 dark:text-gray-400 flex items-center gap-2"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <p>Created & Designed by Colin Chambachan, 2024</p>
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+          </span>
+          <p>Updated 10/22/2025</p>
         </motion.aside>
         <motion.nav
           className="hidden md:flex justify-center gap-5"
