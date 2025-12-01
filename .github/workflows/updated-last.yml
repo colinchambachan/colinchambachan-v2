@@ -1,0 +1,30 @@
+name: Update Last Updated Timestamp
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "app/lastUpdated.json"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Write latest commit timestamp
+        run: |
+          DATE=$(date -u +"%d/%m/%Y")
+          echo "{ \"lastUpdated\": \"$DATE\" }" > app/lastUpdated.json
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add app/lastUpdated.json
+          git commit -m "Update last updated" || exit 0
+          git push

@@ -60,9 +60,9 @@ export default function RootLayout({
         <ThemeProvider>
           {/* Background grid pattern */}
           <div
-            className="fixed inset-0 pointer-events-none opacity-30 dark:opacity-10"
+            className="fixed inset-0 pointer-events-none opacity-50 dark:opacity-15"
             style={{
-              background: "radial-gradient(#d0d0d0 1px, transparent 0.8px)",
+              background: "radial-gradient(#d0d0d0 1.5px, transparent 0.9px)",
               backgroundSize: "22px 22px",
             }}
           ></div>
