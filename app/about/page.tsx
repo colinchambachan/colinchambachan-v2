@@ -94,8 +94,8 @@ export default function About() {
               </p>
               <div className="md:block">
                 <p>
-                  I'm currently working at RBC Borealis, where I'm working on
-                  two tools under the{" "}
+                  I'm recently worked at RBC Borealis, where I worked on two
+                  tools under the{" "}
                   <a
                     className="text-primary dark:text-blue-400 font-bold underline underline-offset-4 inline-flex items-center gap-1"
                     href="https://rbcborealis.com/applications/lumina-platform/"
