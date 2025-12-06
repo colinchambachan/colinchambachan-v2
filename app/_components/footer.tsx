@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import last from "../../lastUpdated.json";
+import last from "../lastUpdated.json";
 
 export default function Footer() {
   return (
