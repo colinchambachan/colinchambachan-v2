@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import hero from "/public/hero.jpg";
+import hero from "../public/hero.jpg";
 import { useState, useEffect } from "react";
 import Modal from "./_components/modal";
 import { motion } from "framer-motion";
