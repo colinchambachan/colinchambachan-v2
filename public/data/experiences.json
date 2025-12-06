@@ -3,9 +3,25 @@
     "org": "RBC Borealis",
     "role": "Software Engineering Intern",
     "link": "https://rbcborealis.com/",
-    "time": "Sep 2024 - Aug 2025",
-    "desc": "Lumina Data Platform - On Data Engineering side, working on a data pipeline to analyze memory wastage on the cluster. On the Gen AI side, working on changes and features to a LLM-based migration service for legacy languages (COBOL, SAS, etc.)",
-    "skills": ["Spark", "Hadoop", "Python", "Langchain", "LangGraph"]
+    "time": "Jan 2025 - Aug 2025",
+    "desc": "AI Agent to automate legacy codebase migration (COBOL, SAS, etc.)",
+    "skills": ["Python", "Langchain", "LangGraph"]
+  },
+  {
+    "org": "University of Oxford",
+    "role": "Undergraduate Research Assistant",
+    "link": "https://www.ox.ac.uk/",
+    "time": "Aug 2025 - Present",
+    "desc": "Semantic-level Uncertainty Quantification in LLMs",
+    "skills": ["Python"]
+  },
+  {
+    "org": "Royal Bank of Canada (RBC)",
+    "role": "Software Engineering Intern",
+    "link": "https://rbcborealis.com/applications/lumina-platform/",
+    "time": "Sep 2024 - Dec 2024",
+    "desc": "Lumina Data Platform - Data pipeline to analyze and optimize memory wastage on the cluster, saving company $XX MM annually.",
+    "skills": ["Spark", "Hadoop", "Python"]
   },
   {
     "org": "McMaster Interdisciplinary Satellite Team",
@@ -17,7 +33,7 @@
   },
   {
     "org": "Workland",
-    "role": "Full-Stack Developer Intern",
+    "role": "Software Engineering Intern",
     "link": "https://www.workland.com/atlas/",
     "time": "May 2024 - Aug 2024",
     "desc": "Returned to design and implement new microservice for Candidate Referral Program",
@@ -25,7 +41,7 @@
   },
   {
     "org": "Workland",
-    "role": "Front-end Developer Intern",
+    "role": "Software Engineering Intern",
     "link": "https://www.workland.com/atlas/",
     "time": "May 2023 - Aug 2023",
     "desc": "Migration from legacy Angular codebase into React",
