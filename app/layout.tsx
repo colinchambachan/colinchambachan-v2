@@ -9,6 +9,7 @@ import { AOSInit } from "./_components/aos";
 import { Analytics } from "@vercel/analytics/react";
 import { Inter, Caveat } from "next/font/google";
 import { ThemeProvider } from "./_components/ThemeProvider";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const caveat = Caveat({ subsets: ["latin"], variable: "--font-caveat" });
@@ -76,6 +77,7 @@ export default function RootLayout({
           ></div>
 
           <Analytics />
+          <SpeedInsights />
           <Navbar />
           <main className="flex-grow flex items-center justify-center py-8 w-full relative z-10">
             {children}
