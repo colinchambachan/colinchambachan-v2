@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 // import localFont from "next/font/local";
 import "./globals.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -9,6 +9,7 @@ import { AOSInit } from "./_components/aos";
 import { Analytics } from "@vercel/analytics/react";
 import { Inter, Caveat } from "next/font/google";
 import { ThemeProvider } from "./_components/ThemeProvider";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const caveat = Caveat({ subsets: ["latin"], variable: "--font-caveat" });
@@ -24,11 +25,16 @@ const caveat = Caveat({ subsets: ["latin"], variable: "--font-caveat" });
 //   weight: "100 900",
 // });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#ffffff",
+};
+
 export const metadata: Metadata = {
   title: "Colin Chambachan",
   description: "Colin's Dev Portfolio",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
-  themeColor: "#ffffff",
   openGraph: {
     title: "Colin Chambachan",
     description: "Cloud, Data & AI Developer",
@@ -76,6 +82,7 @@ export default function RootLayout({
           ></div>
 
           <Analytics />
+          <SpeedInsights />
           <Navbar />
           <main className="flex-grow flex items-center justify-center py-8 w-full relative z-10">
             {children}
