@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 // import localFont from "next/font/local";
 import "./globals.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -25,11 +25,16 @@ const caveat = Caveat({ subsets: ["latin"], variable: "--font-caveat" });
 //   weight: "100 900",
 // });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#ffffff",
+};
+
 export const metadata: Metadata = {
   title: "Colin Chambachan",
   description: "Colin's Dev Portfolio",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
-  themeColor: "#ffffff",
   openGraph: {
     title: "Colin Chambachan",
     description: "Cloud, Data & AI Developer",
