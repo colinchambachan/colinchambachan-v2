@@ -64,8 +64,16 @@ export default function Home() {
   return (
     <div className="w-full h-full px-4 sm:px-6 md:px-8">
       <div className="hero max-w-5xl mx-auto relative">
-        {/* Background gradient effect */}
-        <div className="absolute -z-10 inset-0 bg-gradient-to-br from-blue-100 via-transparent to-purple-100 dark:from-blue-900/30 dark:via-transparent dark:to-purple-900/30 rounded-2xl md:rounded-3xl opacity-60 dark:opacity-40" />
+        {/* Subtle geometric background pattern */}
+        <div className="absolute -z-10 inset-0 overflow-hidden rounded-2xl md:rounded-3xl">
+          {/* Soft ambient glow */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-slate-50 to-slate-100 dark:from-slate-900/50 dark:via-slate-900/30 dark:to-slate-800/40" />
+          {/* Decorative circles */}
+          <div className="absolute -top-24 -right-24 w-64 h-64 bg-blue-400/15 dark:bg-blue-400/10 rounded-full blur-3xl" />
+          <div className="absolute -bottom-16 -left-16 w-48 h-48 bg-slate-300/30 dark:bg-slate-500/10 rounded-full blur-2xl" />
+          {/* Subtle border */}
+          <div className="absolute inset-0 rounded-2xl md:rounded-3xl ring-1 ring-slate-300/70 dark:ring-slate-700/30" />
+        </div>
 
         <div className="flex flex-col items-center md:flex-row md:items-center md:justify-between py-6 sm:py-10 md:py-12 px-4 sm:px-6 md:px-12">
           <motion.div
@@ -74,7 +82,7 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="relative"
           >
-            <div className="absolute md:-inset-0.5 rounded-full bg-gradient-to-tr from-primary to-blue-400 dark:from-blue-500 dark:to-purple-500 opacity-75 dark:opacity-60 blur-sm"></div>
+            <div className="absolute -inset-1 rounded-full bg-gradient-to-tr from-blue-500/40 to-sky-400/30 dark:from-blue-500/50 dark:to-cyan-400/40 blur-md"></div>
             <Image
               src={hero}
               className="w-36 h-36 sm:w-52 sm:h-52 md:w-64 md:h-64 xl:w-80 xl:h-80 rounded-full shadow-md lg:shadow-2xl mb-6 md:mb-0 object-cover relative z-10 ring-2 ring-white dark:ring-gray-800"
@@ -96,7 +104,7 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-primary to-blue-600 dark:from-blue-400 dark:to-purple-400 text-transparent bg-clip-text">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-primary dark:text-blue-400">
                 {showNotation ? (
                   <RoughNotation
                     type="underline"
