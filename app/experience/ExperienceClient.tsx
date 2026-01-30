@@ -78,7 +78,7 @@ export default function ExperienceClient({
             return (
               <div
                 key={experience.org + experience.role}
-                className="card bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 h-full w-full shadow-lg hover:shadow-2xl hover:border-primary/50 dark:hover:border-blue-500/50 hover:-translate-y-1 transition-all duration-300 ease-in-out"
+                className="card glass-card border-0 h-full w-full"
                 data-aos="fade-up"
                 data-aos-delay={`${cardDelay}`}
                 data-aos-duration="600"

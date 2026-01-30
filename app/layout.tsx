@@ -74,12 +74,6 @@ export default function RootLayout({
           ></div>
 
           {/* Optional paper texture */}
-          <div
-            className="pointer-events-none fixed inset-0 opacity-10 dark:opacity-5"
-            style={{
-              background: "url(/textures/paper.png)",
-            }}
-          ></div>
 
           <Analytics />
           <SpeedInsights />
