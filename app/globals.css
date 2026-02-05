@@ -190,56 +190,61 @@ html {
 }
 
 .glass-card {
-  /* Gradient simulates light hitting the surface */
   background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.7) 0%,
-    rgba(255, 255, 255, 0.4) 100%
+    150deg,
+    rgba(255, 255, 255, 0.74) 0%,
+    rgba(255, 255, 255, 0.6) 100%
   );
-  backdrop-filter: blur(20px) saturate(200%);
-  -webkit-backdrop-filter: blur(20px) saturate(200%);
-  
-  /* Border simulating light source (top-left bright, bottom-right dim) */
-  border-top: 1px solid rgba(255, 255, 255, 0.8);
-  border-left: 1px solid rgba(255, 255, 255, 0.8);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  border-right: 1px solid rgba(255, 255, 255, 0.4);
-  
-  /* Complex shadow: Outer soft shadow + Inner white glow (simulates refraction/thickness) */
-  box-shadow: 
-    0 8px 32px 0 rgba(31, 38, 135, 0.1), 
-    inset 0 0 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 0 20px rgba(255, 255, 255, 0.2); 
-    
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(255, 255, 255, 0.66);
+  box-shadow:
+    0 12px 30px -24px rgba(15, 23, 42, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(14px) saturate(130%);
+  -webkit-backdrop-filter: blur(14px) saturate(130%);
+  transition: transform 220ms ease, box-shadow 220ms ease;
 }
 
 .glass-card:hover {
-  box-shadow: 
-    0 16px 48px 0 rgba(31, 38, 135, 0.15), 
-    inset 0 0 0 1px rgba(255, 255, 255, 0.4),
-    inset 0 0 20px rgba(255, 255, 255, 0.3);
-  transform: translateY(-4px);
+  transform: translateY(-2px);
+  box-shadow:
+    0 16px 34px -24px rgba(15, 23, 42, 0.48),
+    inset 0 1px 0 rgba(255, 255, 255, 0.76);
 }
 
 .dark .glass-card {
   background: linear-gradient(
-    135deg,
+    150deg,
     rgba(30, 41, 59, 0.7) 0%,
-    rgba(15, 23, 42, 0.6) 100%
+    rgba(15, 23, 42, 0.62) 100%
   );
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  border-right: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow: 
-    0 8px 32px 0 rgba(0, 0, 0, 0.4),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  box-shadow:
+    0 18px 38px -24px rgba(2, 6, 23, 0.7),
+    inset 0 1px 0 rgba(148, 163, 184, 0.18);
 }
 
 .dark .glass-card:hover {
-  box-shadow: 
-    0 16px 48px 0 rgba(0, 0, 0, 0.5),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 24px 44px -24px rgba(2, 6, 23, 0.75),
+    inset 0 1px 0 rgba(148, 163, 184, 0.22);
 }
 
+@supports not ((backdrop-filter: blur(2px))) {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.94);
+  }
+
+  .dark .glass-card {
+    background: rgba(15, 23, 42, 0.92);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glass-card {
+    transition: none;
+  }
+
+  .glass-card:hover {
+    transform: none;
+  }
+}
