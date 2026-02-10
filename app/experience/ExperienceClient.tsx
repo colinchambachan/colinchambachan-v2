@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { RoughNotation } from "react-rough-notation";
+import { useEffect } from "react";
+import AsciiMorphHeader from "../_components/AsciiMorphHeader";
 
 interface Experience {
   org: string;
@@ -19,8 +19,6 @@ interface ExperienceClientProps {
 export default function ExperienceClient({
   experiences,
 }: ExperienceClientProps) {
-  const [showNotation, setShowNotation] = useState(false);
-
   useEffect(() => {
     // Initialize AOS
     const initAOS = async () => {
@@ -43,31 +41,20 @@ export default function ExperienceClient({
     initAOS();
   }, []);
 
-  useEffect(() => {
-    // Show underline animation
-    setTimeout(() => setShowNotation(true), 800);
-  }, []);
-
   return (
     <div className="flex flex-col w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
       <div className="w-full">
-        <h1
-          className="text-3xl md:text-5xl mb-6 md:mb-8 font-bold tracking-tight"
+        <div
           data-aos="fade-up"
           data-aos-duration="600"
         >
-          <RoughNotation
-            type="underline"
-            show={showNotation}
-            color="#2563eb"
-            strokeWidth={3}
-            animationDuration={800}
-          >
-            <span className="text-primary dark:text-blue-400">
-              &gt; Experience
-            </span>
-          </RoughNotation>
-        </h1>
+          <AsciiMorphHeader
+            text="Experience"
+            startDelay={180}
+            variant="blueprint"
+            underlineColor="#2563eb"
+          />
+        </div>
 
         <div
           className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 w-full min-h-[400px]"

@@ -2,41 +2,32 @@
 
 import { RoughNotation } from "react-rough-notation";
 import { useState, useEffect } from "react";
+import AsciiMorphHeader from "../_components/AsciiMorphHeader";
 
 export default function More() {
   const [showGDGNotation, setShowGDGNotation] = useState(false);
-  const [showGuitarNotation, setShowGuitarNotation] = useState(false);
-  const [showReadingNotation, setShowReadingNotation] = useState(false);
 
   useEffect(() => {
-    // Cascade the underlines
+    // Trigger body highlight accents.
     setTimeout(() => setShowGDGNotation(true), 800);
-    setTimeout(() => setShowGuitarNotation(true), 1600);
-    setTimeout(() => setShowReadingNotation(true), 2400);
   }, []);
   return (
     <div className="flex flex-col w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
       <div className="w-full text-sm md:text-base text-gray-900 dark:text-gray-100">
         <div className="flex flex-col">
           <div>
-            <h1
-              className="text-3xl md:text-5xl mb-6 md:mb-8 font-bold tracking-tight"
+            <div
               data-aos="fade-up"
               data-aos-duration="600"
               id="parent"
             >
-              <RoughNotation
-                type="underline"
-                show={showGDGNotation}
-                color="#2563eb"
-                strokeWidth={3}
-                animationDuration={800}
-              >
-                <span className="text-primary dark:text-blue-400">
-                  &gt; Google Developer Groups
-                </span>
-              </RoughNotation>
-            </h1>
+              <AsciiMorphHeader
+                text="Google Developer Groups"
+                startDelay={200}
+                variant="tech"
+                underlineColor="#2563eb"
+              />
+            </div>
             <div
               className="mb-8 md:mb-12 space-y-4 leading-relaxed"
               data-aos="fade-up"
@@ -147,25 +138,20 @@ export default function More() {
                 </a>
               </p>
             </div>
-            <h1
-              className="text-3xl md:text-5xl mb-6 md:mb-8 font-bold tracking-tight"
+            <div
               data-aos="fade-up"
               data-aos-delay="200"
               data-aos-duration="600"
               data-aos-anchor="#parent"
             >
-              <RoughNotation
-                type="underline"
-                show={showGuitarNotation}
-                color="#2563eb"
-                strokeWidth={3}
-                animationDuration={800}
-              >
-                <span className="text-primary dark:text-blue-400">
-                  &gt; Guitar & Music
-                </span>
-              </RoughNotation>
-            </h1>
+              <AsciiMorphHeader
+                text="Guitar & Music"
+                startDelay={760}
+                variant="matrix"
+                underlineColor="#2563eb"
+                asciiOrnament="o=|::::>"
+              />
+            </div>
 
             <div
               className="mb-8 md:mb-12 space-y-4 leading-relaxed"
@@ -202,25 +188,19 @@ export default function More() {
                 </a>
               </p>
             </div>
-            <h1
-              className="text-3xl md:text-5xl mb-6 md:mb-8 font-bold tracking-tight"
+            <div
               data-aos="fade-up"
               data-aos-delay="400"
               data-aos-duration="600"
               data-aos-anchor="#parent"
             >
-              <RoughNotation
-                type="underline"
-                show={showReadingNotation}
-                color="#2563eb"
-                strokeWidth={3}
-                animationDuration={800}
-              >
-                <span className="text-primary dark:text-blue-400">
-                  &gt; Reading
-                </span>
-              </RoughNotation>
-            </h1>
+              <AsciiMorphHeader
+                text="Reading"
+                startDelay={1320}
+                variant="blueprint"
+                underlineColor="#2563eb"
+              />
+            </div>
 
             <div
               className="mb-8 md:mb-12 space-y-4 leading-relaxed"

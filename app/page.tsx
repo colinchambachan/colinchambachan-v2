@@ -4,26 +4,13 @@ import hero from "../public/hero.jpg";
 import { useState, useEffect } from "react";
 import Modal from "./_components/modal";
 import { motion } from "framer-motion";
-import { RoughNotation } from "react-rough-notation";
+import AsciiMorphHeader from "./_components/AsciiMorphHeader";
 
 export default function Home() {
   type Paragraph = string[];
   const [quickContent, setQuickContent] = useState<string[][]>([]);
   const [firstTwoLines, setFirstTwoLines] = useState<string[]>([]);
   const [showModal, setShowModal] = useState<boolean>(false);
-  const [showNotation, setShowNotation] = useState<boolean>(false);
-
-  useEffect(() => {
-    // Delay RoughNotation until after Framer Motion animations complete AND layout is stable
-    const timer = setTimeout(() => {
-      // Force a reflow to ensure layout is settled
-      window.requestAnimationFrame(() => {
-        setShowNotation(true);
-      });
-    }, 800); // Increased delay for more stability
-
-    return () => clearTimeout(timer);
-  }, []);
 
   useEffect(() => {
     // fetch the text file
@@ -105,19 +92,17 @@ export default function Home() {
               transition={{ duration: 0.5 }}
             >
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-primary dark:text-blue-400">
-                {showNotation ? (
-                  <RoughNotation
-                    type="underline"
-                    show={true}
-                    color="#2563eb"
-                    strokeWidth={2}
-                    animationDuration={800}
-                  >
-                    Hi! I'm Colin
-                  </RoughNotation>
-                ) : (
-                  <span>Hi! I'm Colin</span>
-                )}
+                <span>Hi! I&apos;m </span>
+                <AsciiMorphHeader
+                  text="Colin"
+                  prefix=""
+                  element="span"
+                  asciiStyle="inline"
+                  variant="tech"
+                  startDelay={300}
+                  className="align-baseline"
+                  underlineColor="#2563eb"
+                />
               </h1>
             </motion.div>
             <h2 className="mt-4 mb-1 text-base md:text-lg text-gray-600 dark:text-gray-300 font-normal">
