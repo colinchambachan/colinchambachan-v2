@@ -2,39 +2,32 @@
 
 import { RoughNotation } from "react-rough-notation";
 import { useState, useEffect } from "react";
+import AsciiMorphHeader from "../_components/AsciiMorphHeader";
 
 export default function About() {
   const [showAboutNotation, setShowAboutNotation] = useState(false);
-  const [showSkillsNotation, setShowSkillsNotation] = useState(false);
 
   useEffect(() => {
-    // Cascade the underlines
+    // Show highlight notations for the body copy.
     setTimeout(() => setShowAboutNotation(true), 800);
-    setTimeout(() => setShowSkillsNotation(true), 1600);
   }, []);
   return (
     <div className="flex flex-col w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
       <div className="text-sm md:text-base text-gray-900 dark:text-gray-100">
         <div className="flex flex-col">
           <div>
-            <h1
-              className="text-3xl md:text-5xl mb-6 md:mb-8 font-bold tracking-tight"
+            <div
               data-aos="fade-up"
               data-aos-duration="600"
               id="title"
             >
-              <RoughNotation
-                type="underline"
-                show={showAboutNotation}
-                color="#2563eb"
-                strokeWidth={3}
-                animationDuration={800}
-              >
-                <span className="text-primary dark:text-blue-400">
-                  &gt; About
-                </span>
-              </RoughNotation>
-            </h1>
+              <AsciiMorphHeader
+                text="About"
+                startDelay={220}
+                variant="tech"
+                underlineColor="#2563eb"
+              />
+            </div>
             <div
               className="mb-8 md:mb-12 space-y-4 leading-relaxed"
               data-aos="fade-up"
@@ -165,25 +158,19 @@ export default function About() {
                 </a>
               </p>
             </div>
-            <h1
-              className="text-3xl md:text-5xl mb-6 md:mb-8 font-bold tracking-tight"
+            <div
               data-aos="fade-up"
               data-aos-delay="200"
               data-aos-duration="600"
               data-aos-anchor="#title"
             >
-              <RoughNotation
-                type="underline"
-                show={showSkillsNotation}
-                color="#2563eb"
-                strokeWidth={3}
-                animationDuration={800}
-              >
-                <span className="text-primary dark:text-blue-400">
-                  &gt; Skills
-                </span>
-              </RoughNotation>
-            </h1>
+              <AsciiMorphHeader
+                text="Skills"
+                startDelay={780}
+                variant="matrix"
+                underlineColor="#2563eb"
+              />
+            </div>
 
             <div className="space-y-3 leading-relaxed">
               <div
