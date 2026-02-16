@@ -84,7 +84,7 @@ export default function ExperienceClient({
                       </h2>
                       <div className="flex flex-col sm:flex-row sm:justify-between gap-1 text-sm">
                         <div className="font-medium">{experience.role}</div>
-                        <div className="text-gray-600 dark:text-gray-400">
+                        <div className="text-slate-600 dark:text-gray-400">
                           {experience.time}
                         </div>
                       </div>
@@ -97,7 +97,7 @@ export default function ExperienceClient({
                         return (
                           <span
                             key={skill}
-                            className="px-2.5 py-1 text-xs font-medium bg-blue-50 dark:bg-blue-900/30 text-primary dark:text-blue-400 rounded-md border border-blue-100 dark:border-blue-800"
+                            className="px-2.5 py-1 text-xs font-medium bg-blue-100/80 dark:bg-blue-900/30 text-blue-800 dark:text-blue-400 rounded-md border border-blue-200 dark:border-blue-800"
                           >
                             {skill}
                           </span>
