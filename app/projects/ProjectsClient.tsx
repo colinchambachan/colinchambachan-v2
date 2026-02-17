@@ -89,7 +89,7 @@ export default function ProjectsClient({ projects }: ProjectsClientProps) {
                           {project.name}
                         </h2>
                         {project.time && (
-                          <div className="text-gray-600 dark:text-gray-400 text-sm">
+                          <div className="text-slate-600 dark:text-gray-400 text-sm">
                             {project.time}
                           </div>
                         )}
@@ -103,7 +103,7 @@ export default function ProjectsClient({ projects }: ProjectsClientProps) {
                         return (
                           <span
                             key={skill}
-                            className="px-2.5 py-1 text-xs font-medium bg-blue-50 dark:bg-blue-900/30 text-primary dark:text-blue-400 rounded-md border border-blue-100 dark:border-blue-800"
+                            className="px-2.5 py-1 text-xs font-medium bg-blue-100/80 dark:bg-blue-900/30 text-blue-800 dark:text-blue-400 rounded-md border border-blue-200 dark:border-blue-800"
                           >
                             {skill}
                           </span>
