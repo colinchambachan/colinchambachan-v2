@@ -1,8 +1,8 @@
 [
   {
     "org": "Google",
-    "role": "SWE Intern",
-    "link": "https://about.google//",
+    "role": "Software Engineering Intern",
+    "link": "https://about.google/products/",
     "time": "May 2026 - Aug 2026",
     "desc": "AI Security agent for Android XR",
     "skills": ["Python"]
