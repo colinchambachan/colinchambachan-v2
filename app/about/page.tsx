@@ -85,9 +85,26 @@ export default function About() {
                 advice about being a "t-shaped" developer, so I'm also always
                 looking to learn new things and diversify my skill set.
               </p>
+              <p>
+                I&apos;ll also be joining{" "}
+                <RoughNotation
+                  type="highlight"
+                  show={showAboutNotation}
+                  color="#dbeafe"
+                  animationDuration={600}
+                  animationDelay={1100}
+                  multiline={true}
+                  padding={2}
+                >
+                  <span className="text-primary dark:text-blue-600 font-bold">
+                    Google
+                  </span>
+                </RoughNotation>{" "}
+                as a SWE Intern for Summer 2026. Excited to talk more about this in the future.
+              </p>
               <div className="md:block">
                 <p>
-                  I'm recently worked at RBC Borealis, where I worked on two
+                  I recently worked at RBC Borealis, where I worked on two
                   tools under the{" "}
                   <a
                     className="text-primary dark:text-blue-400 font-bold underline underline-offset-4 inline-flex items-center gap-1"

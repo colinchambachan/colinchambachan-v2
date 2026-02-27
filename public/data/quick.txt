@@ -1,9 +1,9 @@
 Colin Chambachan - a non-exhaustive insight
 
 Experience:
+SWE Intern @ Google
 Data + AI @ RBC Borealis
 Research @ University of Oxford
-Open Source @ Google
 Full Stack @ McMaster Satellite 
 Full Stack @ Workland
 President @ GDG McMaster
