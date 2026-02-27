@@ -11,6 +11,11 @@ export default function Home() {
   const [quickContent, setQuickContent] = useState<string[][]>([]);
   const [firstTwoLines, setFirstTwoLines] = useState<string[]>([]);
   const [showModal, setShowModal] = useState<boolean>(false);
+  const googleInternStartDate = new Date("2026-05-01T00:00:00");
+  const isGoogleInternStarted = new Date() >= googleInternStartDate;
+  const googleInternRole = isGoogleInternStarted
+    ? "SWE Intern"
+    : "Incoming SWE Intern";
 
   useEffect(() => {
     // fetch the text file
@@ -106,9 +111,9 @@ export default function Home() {
               </h1>
             </motion.div>
             <h2 className="mt-4 mb-1 text-base md:text-lg text-gray-600 dark:text-gray-300 font-normal">
-              Currently researching LLMs @ University of Oxford
+              {googleInternRole} @ Google
             </h2>
-            <h2 className="mb-6 text-base md:text-lg text-gray-500 dark:text-gray-400 font-normal">
+            <h2 className="mb-4 text-base md:text-lg text-gray-500 dark:text-gray-400 font-normal">
               Prev. Data + AI @ RBC Borealis
             </h2>
             <p className="mb-6 text-lg md:text-xl text-primary dark:text-blue-400 font-semibold">
