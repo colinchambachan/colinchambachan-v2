@@ -165,7 +165,7 @@ export default function About() {
               </p>
               <p>
                 I'm happy to speak more about any of my experiences, projects,
-                or interests. Feel free to reach out on Linkedin or at{" "}
+                or interests. Feel free to reach out on LinkedIn or at{" "}
                 <a
                   href="mailto:cchambachan@outlook.com"
                   className="text-primary dark:text-blue-400 font-bold underline underline-offset-4"
@@ -198,7 +198,7 @@ export default function About() {
                 data-aos-anchor="#title"
               >
                 <span className="font-bold">Languages: </span> Python,
-                Javascript, Java, SQL, HTML, CSS, C, C++, Bash, MATLAB
+                JavaScript, Java, SQL, HTML, CSS, C, C++, Bash, MATLAB
               </div>
               <div
                 className="mb-2"

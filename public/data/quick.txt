@@ -9,7 +9,7 @@ Full Stack @ Workland
 President @ GDG McMaster
 
 Skills:
-Langs - Python, Java, SQL, Javascript + others
+Langs - Python, Java, SQL, JavaScript + others
 Tech - Spark, Pandas, Express, React, Scikit + others
 Tools - AWS, MySQL, Tableau, Docker + others
 

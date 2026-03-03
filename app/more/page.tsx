@@ -58,7 +58,7 @@ export default function More() {
               <p>
                 I lead a team of 70+ as one of the largest chapters in North
                 America, boasting 1300+ members. We've been very fortunate to
-                host successful events such resume roasts, networking and
+                host successful events such as resume roasts, networking and
                 leadership panels, intro to various tech nights, and even an
                 annual hackathon with{" "}
                 <RoughNotation
@@ -108,7 +108,7 @@ export default function More() {
                 </span>{" "}
                 and{" "}
                 <span className="text-primary dark:text-blue-400 font-bold">
-                  Google IO '25
+                  Google I/O '25
                 </span>{" "}
                 in{" "}
                 <span className="text-primary dark:text-blue-400 font-bold">
@@ -116,9 +116,9 @@ export default function More() {
                 </span>
                 . It was extremely interesting to see the newest innovations in
                 Data Services with Gen AI, and how companies are able to deliver
-                them at scale by leveraging the cloud. We got the change to
+                them at scale by leveraging the cloud. We got the chance to
                 connect with Google Engineers, and I was quite interested in the
-                working being done on the Gemini team. Naturally, this played a
+                work being done on the Gemini team. Naturally, this played a
                 big part in kick-starting my passion for Cloud, Data, and AI.
                 You can read more about Google Cloud Next '23{" "}
                 <a
@@ -128,7 +128,7 @@ export default function More() {
                 >
                   here
                 </a>{" "}
-                and more about Google IO '25{" "}
+                and more about Google I/O '25{" "}
                 <a
                   className="text-primary dark:text-blue-400 font-bold underline underline-offset-4"
                   href="https://io.google/2025/"
@@ -136,6 +136,7 @@ export default function More() {
                 >
                   here
                 </a>
+                .
               </p>
             </div>
             <div
